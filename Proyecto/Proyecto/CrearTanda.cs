@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form4 : Form
+    public partial class CrearTanda : Form
     {
-        public Form4()
+        public CrearTanda()
         {
             InitializeComponent();
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -27,9 +22,15 @@ namespace Proyecto
 
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            //TO DO: Crear una nueva tanda en la base de datos
+            this.Close();
         }
     }
 }

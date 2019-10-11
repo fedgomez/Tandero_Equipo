@@ -1,4 +1,4 @@
-﻿namespace Tandero
+﻿namespace Proyecto
 {
     partial class DetalleTandaParticipante
     {
@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRating = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -82,14 +82,15 @@
             this.listBox1.Size = new System.Drawing.Size(179, 244);
             this.listBox1.TabIndex = 4;
             // 
-            // button1
+            // btnRating
             // 
-            this.button1.Location = new System.Drawing.Point(171, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Asignar Rating";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRating.Location = new System.Drawing.Point(171, 27);
+            this.btnRating.Name = "btnRating";
+            this.btnRating.Size = new System.Drawing.Size(122, 30);
+            this.btnRating.TabIndex = 5;
+            this.btnRating.Text = "Asignar Rating";
+            this.btnRating.UseVisualStyleBackColor = true;
+            this.btnRating.Click += new System.EventHandler(this.btnRating_Click);
             // 
             // label5
             // 
@@ -106,7 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 400);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRating);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -126,7 +127,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRating;
         private System.Windows.Forms.Label label5;
     }
 }

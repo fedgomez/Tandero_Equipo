@@ -1,4 +1,4 @@
-﻿namespace Tandero
+﻿namespace Proyecto
 {
     partial class TandasParticipante
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUnirTanda = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -42,14 +42,15 @@
             this.listBox1.Size = new System.Drawing.Size(297, 276);
             this.listBox1.TabIndex = 0;
             // 
-            // button1
+            // btnUnirTanda
             // 
-            this.button1.Location = new System.Drawing.Point(207, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Unir a Tanda";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUnirTanda.Location = new System.Drawing.Point(207, 349);
+            this.btnUnirTanda.Name = "btnUnirTanda";
+            this.btnUnirTanda.Size = new System.Drawing.Size(102, 23);
+            this.btnUnirTanda.TabIndex = 1;
+            this.btnUnirTanda.Text = "Unir a Tanda";
+            this.btnUnirTanda.UseVisualStyleBackColor = true;
+            this.btnUnirTanda.Click += new System.EventHandler(this.btnUnirTanda_Click);
             // 
             // textBox1
             // 
@@ -64,7 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 414);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUnirTanda);
             this.Controls.Add(this.listBox1);
             this.Name = "TandasParticipante";
             this.Text = "TandasParticipante";
@@ -76,7 +77,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUnirTanda;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
