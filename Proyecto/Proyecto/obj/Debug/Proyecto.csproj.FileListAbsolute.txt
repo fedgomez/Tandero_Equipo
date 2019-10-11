@@ -9,3 +9,23 @@ C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCom
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Form2.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.csprojAssemblyReference.cache
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.Registro.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.Tandas.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.CrearTanda.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.CalificarOrganizador.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.CalificarUsuario.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.DetalleTandaParticipante.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.LoginTandero.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.Menu.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.Perfil.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.TandasOrganizador.resources
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.TandasParticipante.resources

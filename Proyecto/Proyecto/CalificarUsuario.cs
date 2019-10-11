@@ -10,26 +10,17 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form3 : Form
+    public partial class CalificarUsuario : Form
     {
-        public Form3()
+        public CalificarUsuario()
         {
             InitializeComponent();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void btnCalificarUsuario_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
+            //TO DO: Hacer que la tabla de la base de datos se actualice 
+            this.Close();
         }
     }
 }

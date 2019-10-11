@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
-namespace Tandero
+namespace Proyecto
 {
     public partial class LoginTandero : Form
     {
@@ -25,6 +26,18 @@ namespace Tandero
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Menu m = new Menu();
+            m.Show();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Registro r = new Registro();
+            r.Show();
         }
     }
 }
