@@ -33,7 +33,7 @@ namespace Proyecto
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True");
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into usuario(nombre)", con);
+            SqlCommand cmd = new SqlCommand("select idUsuario from Usuario where Email ", con);
             int i = cmd.ExecuteNonQuery();
             if (i != 0)
             {

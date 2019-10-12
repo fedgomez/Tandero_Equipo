@@ -130,6 +130,12 @@ namespace Proyecto
             get => password;
             set => password = value;
         }
+
+        public Button BtnLogin
+        {
+            get => btnLogin;
+            set => btnLogin = value;
+        }
     }
 }
 
