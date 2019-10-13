@@ -10,26 +10,17 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form4 : Form
+    public partial class DetalleTandaParticipante : Form
     {
-        public Form4()
+        public DetalleTandaParticipante()
         {
             InitializeComponent();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void btnRating_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
+            CalificarOrganizador co = new CalificarOrganizador();
+            co.Show();
         }
     }
 }

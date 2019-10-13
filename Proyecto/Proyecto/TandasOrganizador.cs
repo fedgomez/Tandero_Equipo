@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form3 : Form
+    public partial class TandasOrganizador : Form
     {
-        public Form3()
+        public TandasOrganizador()
         {
             InitializeComponent();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form5 : Form
+    public partial class TandasParticipante : Form
     {
-        public Form5()
+        public TandasParticipante()
         {
             InitializeComponent();
+        }
+
+        private void btnUnirTanda_Click(object sender, EventArgs e)
+        {
+            //TO DO: Agregar al usuario actual a una tanda nueva con su código correspondiente
         }
     }
 }

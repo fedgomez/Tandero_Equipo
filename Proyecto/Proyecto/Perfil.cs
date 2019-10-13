@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
-    public partial class Form1 : Form
+    public partial class Perfil : Form
     {
-        public Form1()
+        public Perfil()
         {
             InitializeComponent();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void btnVolver_Click_1(object sender, EventArgs e)
         {
-            
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
