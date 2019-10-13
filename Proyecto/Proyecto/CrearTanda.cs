@@ -33,21 +33,27 @@ namespace Proyecto
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-         /*   //TO DO: Crear una nueva tanda en la base de datos
+            //TO DO: Crear una nueva tanda en la base de datos
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Insert into Tanda values(5,1, '"+ dateTimePicker1.Value.Date+ "'," + textBox1.Text +
+            /*cmd.CommandText = "Insert into Tanda values(5,1, '"+ dateTimePicker1.Value.Date+ "'," + textBox1.Text +
                               "," + textBox2.Text + "," + textBox3.Text + ",'" + textBox4.Text + "','" +textBox5.Text + "')";
-            
-            MessageBox.Show(dateTimePicker1.Value.ToShortDateString());
-            cmd.ExecuteNonQuery();
-            con.Close();
-    */
+            */
 
-            /*
-             * Agregando comments para commit a Master
-             */
+            int date3 = dateTimePicker1.Value.Day;
+            int date2 = dateTimePicker1.Value.Month;
+            int date = dateTimePicker1.Value.Year;
+
+            String fecha = (date + "-" + date2 + "-" + date3);
+            MessageBox.Show(fecha);
+
+            cmd.CommandText = "insert into tanda Values (8,1,'"+fecha+"',15,20,150,'dsasd','sdasa')";
+            //MessageBox.Show(dateTimePicker1.Value.ToShortDateString());
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+
         }
 
         private void Label1_Click(object sender, EventArgs e)
