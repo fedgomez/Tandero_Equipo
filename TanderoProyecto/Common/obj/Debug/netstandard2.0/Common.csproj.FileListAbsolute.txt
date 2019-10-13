@@ -1,0 +1,8 @@
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
