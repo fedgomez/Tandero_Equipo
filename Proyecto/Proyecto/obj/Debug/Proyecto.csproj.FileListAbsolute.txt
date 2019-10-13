@@ -9,3 +9,6 @@ C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCom
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\Felipe\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Form2.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.csprojAssemblyReference.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
