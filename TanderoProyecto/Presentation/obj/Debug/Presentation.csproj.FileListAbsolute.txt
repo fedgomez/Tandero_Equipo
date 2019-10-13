@@ -19,3 +19,11 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.pdb
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.dll
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.pdb
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarOrganizador.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarUsuario.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaParticipante.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Tandas.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
