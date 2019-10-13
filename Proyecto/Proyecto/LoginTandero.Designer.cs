@@ -1,4 +1,6 @@
-﻿namespace Proyecto
+﻿using System.Windows.Forms;
+
+namespace Proyecto
 {
     partial class LoginTandero
     {
@@ -111,11 +113,29 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRegister;
+
+        public TextBox Email
+        {
+            get => email;
+            set => email = value;
+        }
+
+        public TextBox Password
+        {
+            get => password;
+            set => password = value;
+        }
+
+        public Button BtnLogin
+        {
+            get => btnLogin;
+            set => btnLogin = value;
+        }
     }
 }
 
