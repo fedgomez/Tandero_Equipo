@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Data.SqlClient;
-using System.Windows.Forms;
+using System.Windows.Forms.MessageBox;
+
+
 
 namespace DataAccess
 {
     public class UserRegister:ConnectionToSql
     {
+
         public bool Register(string Name, string Email, string Password)
         {
             using (var connection = GetConnection())
@@ -23,7 +26,7 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("Usuario ya existente");
+                        MessageBox.Show(Usuario ya existente);
                         return false;
                     }
                 }
