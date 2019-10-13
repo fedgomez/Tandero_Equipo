@@ -36,10 +36,9 @@
             // 
             // btnCrearTanda
             // 
-            this.btnCrearTanda.Location = new System.Drawing.Point(208, 294);
-            this.btnCrearTanda.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearTanda.Location = new System.Drawing.Point(156, 239);
             this.btnCrearTanda.Name = "btnCrearTanda";
-            this.btnCrearTanda.Size = new System.Drawing.Size(100, 28);
+            this.btnCrearTanda.Size = new System.Drawing.Size(75, 23);
             this.btnCrearTanda.TabIndex = 1;
             this.btnCrearTanda.Text = "Crear tanda";
             this.btnCrearTanda.UseVisualStyleBackColor = true;
@@ -47,10 +46,9 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(208, 15);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Location = new System.Drawing.Point(156, 12);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(100, 28);
+            this.btnRegresar.Size = new System.Drawing.Size(75, 23);
             this.btnRegresar.TabIndex = 2;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
@@ -58,10 +56,9 @@
             // 
             // btnParticipante
             // 
-            this.btnParticipante.Location = new System.Drawing.Point(107, 220);
-            this.btnParticipante.Margin = new System.Windows.Forms.Padding(4);
+            this.btnParticipante.Location = new System.Drawing.Point(80, 179);
             this.btnParticipante.Name = "btnParticipante";
-            this.btnParticipante.Size = new System.Drawing.Size(100, 28);
+            this.btnParticipante.Size = new System.Drawing.Size(75, 23);
             this.btnParticipante.TabIndex = 3;
             this.btnParticipante.Text = "Participante";
             this.btnParticipante.UseVisualStyleBackColor = true;
@@ -69,25 +66,23 @@
             // 
             // btnOrganizador
             // 
-            this.btnOrganizador.Location = new System.Drawing.Point(107, 142);
-            this.btnOrganizador.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOrganizador.Location = new System.Drawing.Point(80, 115);
             this.btnOrganizador.Name = "btnOrganizador";
-            this.btnOrganizador.Size = new System.Drawing.Size(100, 28);
+            this.btnOrganizador.Size = new System.Drawing.Size(75, 23);
             this.btnOrganizador.TabIndex = 4;
             this.btnOrganizador.Text = "Organizador";
             this.btnOrganizador.UseVisualStyleBackColor = true;
-            this.btnOrganizador.Click += new System.EventHandler(this.btnOrganizador_Click_1);
+            this.btnOrganizador.Click += new System.EventHandler(this.BtnOrganizador_Click_1);
             // 
             // Tandas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 344);
+            this.ClientSize = new System.Drawing.Size(236, 280);
             this.Controls.Add(this.btnOrganizador);
             this.Controls.Add(this.btnParticipante);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCrearTanda);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tandas";
             this.Text = "Tandas";
             this.ResumeLayout(false);
