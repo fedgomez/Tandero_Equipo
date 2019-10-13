@@ -14,3 +14,8 @@ C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.TandasParticipante.resources
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
