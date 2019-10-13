@@ -42,6 +42,7 @@ namespace Proyecto
                     {
                         Menu m = new Menu();
                         m.Show();
+                        m.FormClosed += Logout;
                         this.Hide();
                     }
                     else
@@ -69,6 +70,14 @@ namespace Proyecto
         {
             Registro r = new Registro();
             r.Show();
+        }
+
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            email.Clear();
+            password.Clear();
+            this.Show();
+            email.Focus();
         }
     }
 }
