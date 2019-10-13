@@ -36,14 +36,15 @@ namespace Proyecto
         }
 
         private void btnRegresar_Click_1(object sender, EventArgs e)
-        //{
+        {
             this.Close();
         }
 
-        private void btnOrganizador_Click_1(object sender, EventArgs e)
+        private void BtnOrganizador_Click_1(object sender, EventArgs e)
         {
             TandasOrganizador to = new TandasOrganizador();
             to.Show();
         }
+
     }
 }
