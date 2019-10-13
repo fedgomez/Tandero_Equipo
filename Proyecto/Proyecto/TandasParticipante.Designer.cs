@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbTandas = new System.Windows.Forms.ListBox();
             this.btnUnirTanda = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbUnirATanda = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbTandas
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(297, 276);
-            this.listBox1.TabIndex = 0;
+            this.lbTandas.FormattingEnabled = true;
+            this.lbTandas.ItemHeight = 16;
+            this.lbTandas.Items.AddRange(new object[] {
+            "Tanda 3",
+            "Tanda 10"});
+            this.lbTandas.Location = new System.Drawing.Point(12, 27);
+            this.lbTandas.Name = "lbTandas";
+            this.lbTandas.Size = new System.Drawing.Size(297, 276);
+            this.lbTandas.TabIndex = 0;
+            this.lbTandas.DoubleClick += new System.EventHandler(this.lbTandas_DoubleClick);
             // 
             // btnUnirTanda
             // 
@@ -52,21 +56,21 @@
             this.btnUnirTanda.UseVisualStyleBackColor = true;
             this.btnUnirTanda.Click += new System.EventHandler(this.btnUnirTanda_Click);
             // 
-            // textBox1
+            // tbUnirATanda
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 349);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 22);
-            this.textBox1.TabIndex = 2;
+            this.tbUnirATanda.Location = new System.Drawing.Point(13, 349);
+            this.tbUnirATanda.Name = "tbUnirATanda";
+            this.tbUnirATanda.Size = new System.Drawing.Size(188, 22);
+            this.tbUnirATanda.TabIndex = 2;
             // 
             // TandasParticipante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 414);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbUnirATanda);
             this.Controls.Add(this.btnUnirTanda);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbTandas);
             this.Name = "TandasParticipante";
             this.Text = "TandasParticipante";
             this.ResumeLayout(false);
@@ -76,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbTandas;
         private System.Windows.Forms.Button btnUnirTanda;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbUnirATanda;
     }
 }
