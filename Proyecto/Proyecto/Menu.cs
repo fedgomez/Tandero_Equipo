@@ -24,8 +24,7 @@ namespace Proyecto
 
         private void button3_Click(object sender, EventArgs e)
         {
-            LoginTandero l = new LoginTandero();
-            l.Show();
+            this.Close();
             //TO DO: Cerrar la sesión activa con base de datos
         }
 

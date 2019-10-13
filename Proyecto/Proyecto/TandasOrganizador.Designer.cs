@@ -28,25 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbTandasOrganizador = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbTandasOrganizador
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(251, 324);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lbTandasOrganizador.FormattingEnabled = true;
+            this.lbTandasOrganizador.ItemHeight = 16;
+            this.lbTandasOrganizador.Items.AddRange(new object[] {
+            "Tanda 3",
+            "Tanda 7",
+            "Tanda 10"});
+            this.lbTandasOrganizador.Location = new System.Drawing.Point(12, 12);
+            this.lbTandasOrganizador.Name = "lbTandasOrganizador";
+            this.lbTandasOrganizador.Size = new System.Drawing.Size(251, 324);
+            this.lbTandasOrganizador.TabIndex = 0;
+            this.lbTandasOrganizador.DoubleClick += new System.EventHandler(this.lbTandasOrganizador_DoubleClick);
             // 
             // TandasOrganizador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 387);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbTandasOrganizador);
             this.Name = "TandasOrganizador";
             this.Text = "TandasOrganizador";
             this.ResumeLayout(false);
@@ -55,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbTandasOrganizador;
     }
 }
