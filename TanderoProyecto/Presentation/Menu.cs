@@ -24,7 +24,15 @@ namespace Proyecto
         private void LoadUserData()
         {
             nombreLabel.Text = UserLoginCache.Nombre;
-            label2.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+            if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
+            {
+                string i = "0";
+                label2.Text = i;
+            }
+            else
+            {
+                label2.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+            }
         }
 
         private void nombreLabel_Click(object sender, EventArgs e)
@@ -41,8 +49,8 @@ namespace Proyecto
 
         private void btnTandas_Click(object sender, EventArgs e)
         {
-            //Tandas t = new Tandas();
-            //t.Show();
+            Tandas t = new Tandas();
+            t.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
