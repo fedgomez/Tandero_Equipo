@@ -44,6 +44,10 @@ namespace Proyecto
             cmd.ExecuteNonQuery();
             con.Close();
     */
+
+            /*
+             * Agregando comments para commit a Master
+             */
         }
 
         private void Label1_Click(object sender, EventArgs e)
