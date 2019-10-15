@@ -144,6 +144,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.7.0"
+        },
         "runtime": {
           "Common.dll": {}
         }

@@ -27,7 +27,7 @@ namespace Proyecto
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //TO DO: Sacar un cuadro de diálogo de ¿Seguro que quieres eliminar la tanda?
+            //TO DO: Habilitar el botón cuando todos hayan recibido un número igual de pagos.
             // Validar que todos ya hayan tenido su cobro de la tanda
 
         }
