@@ -27,7 +27,6 @@ namespace Proyecto
             InitializeComponent();
             idTanda = Int32.Parse(id);
             nombreTanda = tanda;
-
         }
 
 
@@ -48,7 +47,6 @@ namespace Proyecto
             lbParticipantes.DisplayMember = "Nombre";
 
             this.Text = nombreTanda;
-
 
             //Method to make button visible when the Tanda meets the conditions to be deleted
             bool flag = true;

@@ -148,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DetalleTandaParticipante";
             this.Text = "DetalleTandaParticipante";
+            this.Load += new System.EventHandler(this.DetalleTandaParticipante_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
