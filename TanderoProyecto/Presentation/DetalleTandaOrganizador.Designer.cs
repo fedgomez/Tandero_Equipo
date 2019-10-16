@@ -61,6 +61,7 @@
             this.lbParticipantes.Name = "lbParticipantes";
             this.lbParticipantes.Size = new System.Drawing.Size(199, 276);
             this.lbParticipantes.TabIndex = 2;
+            this.lbParticipantes.DoubleClick += new System.EventHandler(this.lbParticipantes_DoubleClick);
             // 
             // labelNombre
             // 

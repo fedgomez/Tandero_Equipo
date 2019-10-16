@@ -17,7 +17,6 @@ namespace Proyecto
             InitializeComponent();
             this.Text = tanda;
             labelNombre.Text = nombreOrg;
-            labelApellido.Text = apellidoOrg;
 
             for (int i = 0; i < participantes.Length; i++)
             {
