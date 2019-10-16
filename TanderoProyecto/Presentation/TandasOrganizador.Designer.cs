@@ -53,6 +53,7 @@
             this.Controls.Add(this.lbTandasOrganizador);
             this.Name = "TandasOrganizador";
             this.Text = "TandasOrganizador";
+            this.Load += new System.EventHandler(this.TandasOrganizador_Load);
             this.ResumeLayout(false);
 
         }

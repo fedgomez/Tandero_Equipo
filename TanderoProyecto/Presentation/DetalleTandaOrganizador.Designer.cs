@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbParticipantes = new System.Windows.Forms.ListBox();
             this.labelNombre = new System.Windows.Forms.Label();
-            this.labelApellido = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,15 +71,6 @@
             this.labelNombre.TabIndex = 3;
             this.labelNombre.Text = "Nombre";
             // 
-            // labelApellido
-            // 
-            this.labelApellido.AutoSize = true;
-            this.labelApellido.Location = new System.Drawing.Point(79, 30);
-            this.labelApellido.Name = "labelApellido";
-            this.labelApellido.Size = new System.Drawing.Size(58, 17);
-            this.labelApellido.TabIndex = 4;
-            this.labelApellido.Text = "Apellido";
-            // 
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(246, 217);
@@ -97,13 +87,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 429);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.labelApellido);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.lbParticipantes);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "DetalleTandaOrganizador";
             this.Text = "DetalleTandaOrganizador";
+            this.Load += new System.EventHandler(this.DetalleTandaOrganizador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,7 +105,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lbParticipantes;
         private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.Label labelApellido;
         private System.Windows.Forms.Button btnEliminar;
     }
 }
