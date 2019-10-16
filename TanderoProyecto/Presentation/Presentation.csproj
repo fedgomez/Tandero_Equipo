@@ -64,7 +64,9 @@
     <Compile Include="CrearTanda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearTanda.Designer.cs" />
+    <Compile Include="CrearTanda.Designer.cs">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetalleTandaOrganizador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,7 +129,9 @@
     <EmbeddedResource Include="CalificarUsuario.resx">
       <DependentUpon>CalificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrearTanda.resx" />
+    <EmbeddedResource Include="CrearTanda.resx">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetalleTandaOrganizador.resx">
       <DependentUpon>DetalleTandaOrganizador.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +186,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{72fef006-9f28-4960-b3c2-20818eea78aa}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{CB717B94-24F9-4B45-9CF6-CC2F2407216F}</Project>
+      <Name>DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{1074ce22-60a1-4141-8ca7-56e9f2b33bee}</Project>

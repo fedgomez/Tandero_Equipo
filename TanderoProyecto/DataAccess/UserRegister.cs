@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Data.SqlClient;
-using System.Windows.Forms.MessageBox;
 using System.Windows.Forms;
 
 namespace DataAccess
@@ -25,7 +24,7 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show(Usuario ya existente);
+                        MessageBox.Show("Usuario ya existente");
                         return false;
                     }
                 }

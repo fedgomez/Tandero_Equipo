@@ -1,4 +1,4 @@
-﻿namespace Proyecto
+﻿namespace Presentation
 {
     partial class CrearTanda
     {
@@ -28,39 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.diapago = new System.Windows.Forms.TextBox();
+            this.participantes = new System.Windows.Forms.TextBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.monto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.codigo = new System.Windows.Forms.TextBox();
+            this.nombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            //((System.ComponentModel.ISupportInitialize)(this.tanderoDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // diapago
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 256);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Tag = "NombreTanda";
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.diapago.Location = new System.Drawing.Point(35, 256);
+            this.diapago.Name = "diapago";
+            this.diapago.Size = new System.Drawing.Size(155, 20);
+            this.diapago.TabIndex = 0;
+            this.diapago.Tag = "NombreTanda";
+            this.diapago.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // textBox2
+            // participantes
             // 
-            this.textBox2.Location = new System.Drawing.Point(35, 295);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Tag = "NombreTanda";
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            this.participantes.Location = new System.Drawing.Point(35, 295);
+            this.participantes.Name = "participantes";
+            this.participantes.Size = new System.Drawing.Size(155, 20);
+            this.participantes.TabIndex = 1;
+            this.participantes.Tag = "NombreTanda";
+            this.participantes.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // btnCrear
             // 
@@ -92,11 +91,6 @@
             this.label2.Text = "Dia pago";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
-            // tanderoDataSet1
-            // 
-            //this.tanderoDataSet1.DataSetName = "TanderoDataSet";
-            //this.tanderoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -116,12 +110,12 @@
             this.label4.Text = "Monto";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
-            // textBox3
+            // monto
             // 
-            this.textBox3.Location = new System.Drawing.Point(35, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 20);
-            this.textBox3.TabIndex = 8;
+            this.monto.Location = new System.Drawing.Point(35, 343);
+            this.monto.Name = "monto";
+            this.monto.Size = new System.Drawing.Size(155, 20);
+            this.monto.TabIndex = 8;
             // 
             // label5
             // 
@@ -133,20 +127,20 @@
             this.label5.Text = "Codigo";
             this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
-            // textBox4
+            // codigo
             // 
-            this.textBox4.Location = new System.Drawing.Point(35, 393);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(155, 20);
-            this.textBox4.TabIndex = 10;
+            this.codigo.Location = new System.Drawing.Point(35, 393);
+            this.codigo.Name = "codigo";
+            this.codigo.Size = new System.Drawing.Size(155, 20);
+            this.codigo.TabIndex = 10;
             // 
-            // textBox5
+            // nombre
             // 
-            this.textBox5.Location = new System.Drawing.Point(35, 217);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(155, 20);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Tag = "NombreTanda";
+            this.nombre.Location = new System.Drawing.Point(35, 217);
+            this.nombre.Name = "nombre";
+            this.nombre.Size = new System.Drawing.Size(155, 20);
+            this.nombre.TabIndex = 11;
+            this.nombre.Tag = "NombreTanda";
             // 
             // label6
             // 
@@ -174,21 +168,20 @@
             this.ClientSize = new System.Drawing.Size(656, 423);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.nombre);
+            this.Controls.Add(this.codigo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.monto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCrear);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.participantes);
+            this.Controls.Add(this.diapago);
             this.Name = "CrearTanda";
             this.ShowIcon = false;
             this.Text = "Crear Tanda";
-            //((System.ComponentModel.ISupportInitialize)(this.tanderoDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,17 +189,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox diapago;
+        private System.Windows.Forms.TextBox participantes;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox monto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox codigo;
+        private System.Windows.Forms.TextBox nombre;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }

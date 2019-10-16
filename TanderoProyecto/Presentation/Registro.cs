@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Domain;
 
-namespace Proyecto
+namespace Presentation
 {
     public partial class Registro : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
+    
 
         public Registro()
         {

@@ -1,4 +1,4 @@
-﻿namespace Proyecto
+﻿namespace Presentation
 {
     partial class Tandas
     {
@@ -32,6 +32,7 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnParticipante = new System.Windows.Forms.Button();
             this.btnOrganizador = new System.Windows.Forms.Button();
+            this.btnUnirse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrearTanda
@@ -56,7 +57,7 @@
             // 
             // btnParticipante
             // 
-            this.btnParticipante.Location = new System.Drawing.Point(80, 179);
+            this.btnParticipante.Location = new System.Drawing.Point(80, 113);
             this.btnParticipante.Name = "btnParticipante";
             this.btnParticipante.Size = new System.Drawing.Size(75, 23);
             this.btnParticipante.TabIndex = 3;
@@ -66,7 +67,7 @@
             // 
             // btnOrganizador
             // 
-            this.btnOrganizador.Location = new System.Drawing.Point(80, 115);
+            this.btnOrganizador.Location = new System.Drawing.Point(80, 64);
             this.btnOrganizador.Name = "btnOrganizador";
             this.btnOrganizador.Size = new System.Drawing.Size(75, 23);
             this.btnOrganizador.TabIndex = 4;
@@ -74,11 +75,22 @@
             this.btnOrganizador.UseVisualStyleBackColor = true;
             this.btnOrganizador.Click += new System.EventHandler(this.BtnOrganizador_Click_1);
             // 
+            // btnUnirse
+            // 
+            this.btnUnirse.Location = new System.Drawing.Point(70, 161);
+            this.btnUnirse.Name = "btnUnirse";
+            this.btnUnirse.Size = new System.Drawing.Size(95, 23);
+            this.btnUnirse.TabIndex = 5;
+            this.btnUnirse.Text = "Unirse a tandas";
+            this.btnUnirse.UseVisualStyleBackColor = true;
+            this.btnUnirse.Click += new System.EventHandler(this.BtnUnirse_Click_1);
+            // 
             // Tandas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 280);
+            this.Controls.Add(this.btnUnirse);
             this.Controls.Add(this.btnOrganizador);
             this.Controls.Add(this.btnParticipante);
             this.Controls.Add(this.btnRegresar);
@@ -94,5 +106,6 @@
         private System.Windows.Forms.Button btnParticipante;
         private System.Windows.Forms.Button btnOrganizador;
         private System.Windows.Forms.Button btnCrearTanda;
+        private System.Windows.Forms.Button btnUnirse;
     }
 }
