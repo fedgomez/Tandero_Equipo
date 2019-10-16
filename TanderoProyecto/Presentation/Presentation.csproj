@@ -64,9 +64,13 @@
     <Compile Include="CrearTanda.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CrearTanda.Designer.cs">
       <DependentUpon>CrearTanda.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="CrearTanda.Designer.cs" />
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
     <Compile Include="DetalleTandaOrganizador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,9 +133,13 @@
     <EmbeddedResource Include="CalificarUsuario.resx">
       <DependentUpon>CalificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CrearTanda.resx">
       <DependentUpon>CrearTanda.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <EmbeddedResource Include="CrearTanda.resx" />
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
     <EmbeddedResource Include="DetalleTandaOrganizador.resx">
       <DependentUpon>DetalleTandaOrganizador.cs</DependentUpon>
     </EmbeddedResource>

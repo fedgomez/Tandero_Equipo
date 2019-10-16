@@ -9,7 +9,10 @@ namespace DataAccess
 {
     public class UserRegister:ConnectionToSql
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
         public bool Register(string Name, string Email, string Password)
         {
             using (var connection = GetConnection())

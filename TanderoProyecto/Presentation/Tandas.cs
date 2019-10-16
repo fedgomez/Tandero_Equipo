@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using Presentation;
 using System;
+=======
+﻿using System;
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +13,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+<<<<<<< HEAD
 namespace Presentation
+=======
+namespace Proyecto
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 {
     public partial class Tandas : Form
     {
@@ -47,9 +55,12 @@ namespace Presentation
             to.Show();
         }
 
+<<<<<<< HEAD
         private void BtnUnirse_Click_1(object sender, EventArgs e)
         {
          
         }
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
     }
 }

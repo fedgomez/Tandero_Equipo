@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace Presentation
+=======
+﻿namespace Proyecto
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 {
     partial class Tandas
     {
@@ -32,7 +36,10 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnParticipante = new System.Windows.Forms.Button();
             this.btnOrganizador = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnUnirse = new System.Windows.Forms.Button();
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
             this.SuspendLayout();
             // 
             // btnCrearTanda
@@ -57,7 +64,11 @@
             // 
             // btnParticipante
             // 
+<<<<<<< HEAD
             this.btnParticipante.Location = new System.Drawing.Point(80, 113);
+=======
+            this.btnParticipante.Location = new System.Drawing.Point(80, 179);
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
             this.btnParticipante.Name = "btnParticipante";
             this.btnParticipante.Size = new System.Drawing.Size(75, 23);
             this.btnParticipante.TabIndex = 3;
@@ -67,7 +78,11 @@
             // 
             // btnOrganizador
             // 
+<<<<<<< HEAD
             this.btnOrganizador.Location = new System.Drawing.Point(80, 64);
+=======
+            this.btnOrganizador.Location = new System.Drawing.Point(80, 115);
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
             this.btnOrganizador.Name = "btnOrganizador";
             this.btnOrganizador.Size = new System.Drawing.Size(75, 23);
             this.btnOrganizador.TabIndex = 4;
@@ -75,6 +90,7 @@
             this.btnOrganizador.UseVisualStyleBackColor = true;
             this.btnOrganizador.Click += new System.EventHandler(this.BtnOrganizador_Click_1);
             // 
+<<<<<<< HEAD
             // btnUnirse
             // 
             this.btnUnirse.Location = new System.Drawing.Point(70, 161);
@@ -85,12 +101,17 @@
             this.btnUnirse.UseVisualStyleBackColor = true;
             this.btnUnirse.Click += new System.EventHandler(this.BtnUnirse_Click_1);
             // 
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
             // Tandas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 280);
+<<<<<<< HEAD
             this.Controls.Add(this.btnUnirse);
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
             this.Controls.Add(this.btnOrganizador);
             this.Controls.Add(this.btnParticipante);
             this.Controls.Add(this.btnRegresar);
@@ -106,6 +127,9 @@
         private System.Windows.Forms.Button btnParticipante;
         private System.Windows.Forms.Button btnOrganizador;
         private System.Windows.Forms.Button btnCrearTanda;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnUnirse;
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
     }
 }

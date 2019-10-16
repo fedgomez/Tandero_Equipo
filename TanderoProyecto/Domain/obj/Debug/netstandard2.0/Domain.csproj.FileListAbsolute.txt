@@ -23,6 +23,7 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\D
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.xml
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.xml
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+<<<<<<< HEAD
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.deps.json
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.dll
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.pdb
@@ -47,3 +48,5 @@ C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.dll
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.pdb
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312

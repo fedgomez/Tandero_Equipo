@@ -6,6 +6,7 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\D
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.deps.json
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.dll
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.pdb
@@ -15,3 +16,5 @@ C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312

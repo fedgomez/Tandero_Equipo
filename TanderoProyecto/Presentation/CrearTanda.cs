@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 using Common.Cache;
 using DataAccess;
+=======
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +14,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+<<<<<<< HEAD
 namespace Presentation
+=======
+namespace Proyecto
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 {
     public partial class CrearTanda : Form
     {
@@ -20,7 +27,14 @@ namespace Presentation
             InitializeComponent();
         }
 
+<<<<<<< HEAD
        private void TextBox1_TextChanged(object sender, EventArgs e)
+=======
+        SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
+
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
         {
 
         }
@@ -32,6 +46,7 @@ namespace Presentation
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             int date3 = dateTimePicker1.Value.Day;
             int date2 = dateTimePicker1.Value.Month;
             int date = dateTimePicker1.Value.Year;
@@ -73,6 +88,23 @@ namespace Presentation
 
              cmd.CommandText = "insert into tanda Values (8,1,'"+fecha+"',15,20,150,'dsasd','sdasa')";
            */
+=======
+         /*   //TO DO: Crear una nueva tanda en la base de datos
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Insert into Tanda values(5,1, '"+ dateTimePicker1.Value.Date+ "'," + textBox1.Text +
+                              "," + textBox2.Text + "," + textBox3.Text + ",'" + textBox4.Text + "','" +textBox5.Text + "')";
+            
+            MessageBox.Show(dateTimePicker1.Value.ToShortDateString());
+            cmd.ExecuteNonQuery();
+            con.Close();
+    */
+
+            /*
+             * Agregando comments para commit a Master
+             */
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
         }
 
         private void Label1_Click(object sender, EventArgs e)

@@ -15,7 +15,11 @@ namespace Presentation
     public partial class Registro : Form
     {
 
+<<<<<<< HEAD
     
+=======
+        SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
+>>>>>>> 80d9966e6e318733663fcf89b4b6d5daa9e67312
 
         public Registro()
         {
