@@ -1,1 +1,0 @@
-# Tandero_Equipo
