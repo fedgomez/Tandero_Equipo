@@ -1,8 +1,7 @@
 ﻿using Common.Cache;
-<<<<<<< HEAD
+
 using DataAccess;
-=======
->>>>>>> master
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,8 +18,6 @@ namespace Proyecto
 {
     public partial class TandasParticipante : Form
     {
-<<<<<<< HEAD
-=======
         String monto;
         String montoPasado;
         String fecha;
@@ -38,7 +35,7 @@ namespace Proyecto
 
         DataTable dtTandasActuales;
         DataTable dtTandasPasadas;
->>>>>>> master
+
         public TandasParticipante()
         {
             InitializeComponent();
@@ -114,9 +111,7 @@ namespace Proyecto
 
         private void lbTandasActuales_DoubleClick(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-          
-=======
+
             if (lbTandasActuales.SelectedItem != null)
             {
                 tanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["NombreTanda"].ToString();
@@ -169,7 +164,7 @@ namespace Proyecto
 
             return dtTandas;
 
->>>>>>> master
+
         }
     }
 }
