@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
+﻿
+using Proyecto;
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Common.Cache;
-using DataAccess;
 
-namespace Proyecto
+namespace Presentation
 {
     public partial class TandasOrganizador : Form
     {
@@ -36,7 +28,7 @@ namespace Proyecto
         {
             query = "SELECT * FROM Tanda WHERE IdOrganizador = " + UserLoginCache.IdUsuario + "AND TandaTerminada = 0";
             dtTandasActuales = GetData(query);
-            lbTandasOrganizador.DataSource = GetData(query);
+            TandasOrganizador.DataSource = GetData(query);
             lbTandasOrganizador.DisplayMember = "NombreTanda";
 
             query = "SELECT * FROM Tanda WHERE IdOrganizador = " + UserLoginCache.IdUsuario + "AND TandaTerminada = 1";

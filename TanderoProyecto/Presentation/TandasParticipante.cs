@@ -1,26 +1,15 @@
-﻿using Common.Cache;
-<<<<<<< HEAD
+﻿
 using DataAccess;
-=======
->>>>>>> bernardo
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto
+namespace Presentation
 {
     public partial class TandasParticipante : Form
     {
-<<<<<<< HEAD
-=======
+
         String monto;
         String montoPasado;
         String fecha;
@@ -38,7 +27,7 @@ namespace Proyecto
 
         DataTable dtTandasActuales;
         DataTable dtTandasPasadas;
->>>>>>> bernardo
+
         public TandasParticipante()
         {
             InitializeComponent();
@@ -114,9 +103,7 @@ namespace Proyecto
 
         private void lbTandasActuales_DoubleClick(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-          
-=======
+
             if (lbTandasActuales.SelectedItem != null)
             {
                 tanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["NombreTanda"].ToString();
@@ -169,7 +156,7 @@ namespace Proyecto
 
             return dtTandas;
 
->>>>>>> bernardo
+
         }
     }
 }

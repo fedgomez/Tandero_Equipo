@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿
 using Common.Cache;
+using System;
+using System.Windows.Forms;
 
-
-namespace Proyecto
+namespace Presentation
 {
     public partial class Menu : Form
     {

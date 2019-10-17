@@ -1,4 +1,4 @@
-﻿namespace Proyecto
+﻿namespace Presentation
 {
     partial class TandasParticipante
     {

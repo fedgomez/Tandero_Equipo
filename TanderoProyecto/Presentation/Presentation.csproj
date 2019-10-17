@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random.cs" />
     <Compile Include="Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,14 +189,6 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{72fef006-9f28-4960-b3c2-20818eea78aa}</Project>
       <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{CB717B94-24F9-4B45-9CF6-CC2F2407216F}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{1074ce22-60a1-4141-8ca7-56e9f2b33bee}</Project>
-      <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
