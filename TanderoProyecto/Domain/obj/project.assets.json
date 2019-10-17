@@ -221,6 +221,9 @@
       "Common/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.7.0"
+        },
         "compile": {
           "bin/placeholder/Common.dll": {}
         },
@@ -878,27 +881,44 @@
     ".NETStandard,Version=v2.0": [
       "Common >= 1.0.0",
       "DataAccess >= 1.0.0",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "System.Data.SqlClient >= 4.7.0"
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Felipe\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\": {},
+>>>>>>> bernardo
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
       "projectName": "Domain",
       "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
+>>>>>>> bernardo
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Bernardo Elizondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> bernardo
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -911,11 +931,19 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
               "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
             },
             "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
               "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
+=======
+            "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
+            },
+            "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
+>>>>>>> bernardo
             }
           }
         }
@@ -934,6 +962,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           }
         },
         "imports": [

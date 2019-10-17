@@ -6,6 +6,7 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\D
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.deps.json
 C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.dll
 C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.pdb
@@ -24,3 +25,13 @@ C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+=======
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Common\obj\Debug\netstandard2.0\Common.pdb
+>>>>>>> bernardo
