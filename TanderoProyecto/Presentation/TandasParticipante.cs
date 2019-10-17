@@ -1,8 +1,12 @@
 ﻿using Common.Cache;
+<<<<<<< HEAD
 using DataAccess;
+=======
+>>>>>>> master
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -15,6 +19,26 @@ namespace Proyecto
 {
     public partial class TandasParticipante : Form
     {
+<<<<<<< HEAD
+=======
+        String monto;
+        String montoPasado;
+        String fecha;
+        String fechaPasada;
+        String tanda;
+        String idTanda;
+        String nombreOrganizador;
+        String idOrganizadorPasada;
+        String tandaPasada;
+        String idTandaPasada;
+        String nombreOrganizadorPasada;
+        String apellidoOrganizador;
+        String[] participantes = null;
+        String query;
+
+        DataTable dtTandasActuales;
+        DataTable dtTandasPasadas;
+>>>>>>> master
         public TandasParticipante()
         {
             InitializeComponent();
@@ -75,10 +99,77 @@ namespace Proyecto
                 this.Hide();
             }
         }
-
-        private void lbTandas_DoubleClick(object sender, EventArgs e)
+        private void TandasParticipante_Load(object sender, EventArgs e)
         {
+            query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 0";
+            dtTandasActuales = GetData(query);
+            lbTandasActuales.DataSource = GetData(query);
+            lbTandasActuales.DisplayMember = "NombreTanda";
+
+            query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 1";
+            dtTandasPasadas = GetData(query);
+            lbTandasPasadas.DataSource = GetData(query);
+            lbTandasPasadas.DisplayMember = "NombreTanda";
+        }
+
+        private void lbTandasActuales_DoubleClick(object sender, EventArgs e)
+        {
+<<<<<<< HEAD
           
+=======
+            if (lbTandasActuales.SelectedItem != null)
+            {
+                tanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["NombreTanda"].ToString();
+                idTanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["IdTanda"].ToString();
+                nombreOrganizador = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Nombre"].ToString();
+                monto = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Monto"].ToString();
+                fecha = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["FechaInicio"].ToString();
+
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha);
+                dto.Show();
+            }
+        }
+
+        private void lbTandasPasadas_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbTandasPasadas.SelectedItem != null)
+            {
+                tandaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["NombreTanda"].ToString();
+                idTandaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["IdTanda"].ToString();
+                nombreOrganizadorPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Nombre"].ToString();
+                montoPasado = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Monto"].ToString();
+                fechaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["FechaInicio"].ToString();
+
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada);
+                dto.Show();
+            }
+        }
+
+
+
+        private DataTable GetData(string query)
+        {
+            DataTable dtTandas = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = System.Data.CommandType.Text;
+
+                    conn.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    dtTandas.Load(reader);
+                }
+            }
+
+            return dtTandas;
+
+>>>>>>> master
         }
     }
 }

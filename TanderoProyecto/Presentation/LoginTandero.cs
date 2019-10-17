@@ -55,13 +55,12 @@ namespace Proyecto
                 }
                 else
                 {
-                    MessageBox.Show("Error, Enter Password");
+                    MessageBox.Show("Error, Password Incorrect");
                 }
             }
             else
             {
-               // MessageBox.Show("Error, Enter Email");
-                System.Console.WriteLine("my string");
+                MessageBox.Show("Error, Email");
             }
 
         }

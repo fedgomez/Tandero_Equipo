@@ -221,6 +221,9 @@
       "Common/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.7.0"
+        },
         "compile": {
           "bin/placeholder/Common.dll": {}
         },
@@ -878,7 +881,8 @@
     ".NETStandard,Version=v2.0": [
       "Common >= 1.0.0",
       "DataAccess >= 1.0.0",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "System.Data.SqlClient >= 4.7.0"
     ]
   },
   "packageFolders": {
@@ -934,6 +938,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           }
         },
         "imports": [

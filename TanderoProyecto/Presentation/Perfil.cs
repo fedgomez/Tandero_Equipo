@@ -26,6 +26,8 @@ namespace Proyecto
 
         private void LoadUserData()
         {
+            float resP;
+            float resO;
             labelName.Text = UserLoginCache.Nombre;
             labelEmail.Text = UserLoginCache.Email;
             if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
@@ -35,7 +37,8 @@ namespace Proyecto
             }
             else
             {
-                labelRatingP.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+                resP = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
+                labelRatingP.Text = resP.ToString();
             }
             if (UserLoginCache.sumRatingO == 0 && UserLoginCache.numVotosO == 0)
             {
@@ -44,7 +47,8 @@ namespace Proyecto
             }
             else
             {
-                labelRatingO.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+                resO = (float)UserLoginCache.sumRatingO / (float)UserLoginCache.numVotosO;
+                labelRatingO.Text = resO.ToString();
             }
         }
     }

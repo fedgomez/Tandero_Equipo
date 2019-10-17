@@ -11,7 +11,8 @@
         "dependencies": {
           "Common": "1.0.0",
           "DataAccess": "1.0.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "System.Data.SqlClient": "4.7.0"
         },
         "runtime": {
           "Domain.dll": {}
@@ -143,6 +144,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.7.0"
+        },
         "runtime": {
           "Common.dll": {}
         }
