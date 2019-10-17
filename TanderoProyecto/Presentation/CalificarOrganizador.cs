@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
 
 namespace Proyecto
 {
@@ -14,6 +15,7 @@ namespace Proyecto
     public partial class CalificarOrganizador : Form
     {
         private string nombreOrganizador;
+        private int IdOrganizador = 1;
         public CalificarOrganizador(string nombre)
         {
             InitializeComponent();
@@ -37,7 +39,18 @@ namespace Proyecto
 
         private void btnCalificarOrg_Click(object sender, EventArgs e)
         {
-            //TO DO: Hacer que la tabla de la base de datos se actualice 
+            //TO DO: Hacer que la tabla de la base de datos se actualice
+            if (tbCalificar.Text != "")
+            {
+                TandaModel rating = new TandaModel();
+                var validRating = rating.UserRating(tbCalificar.Text, false, IdOrganizador);
+                if (validRating == true)
+                {
+                    MessageBox.Show("Rating Orgnanizador asignado");
+                    this.Hide();
+                }
+            }
+            this.Close();
             this.Close();
         }
     }

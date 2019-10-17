@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
 
 namespace Proyecto
 {
@@ -28,6 +29,16 @@ namespace Proyecto
         private void btnCalificarUsuario_Click(object sender, EventArgs e)
         {
             //TO DO: Hacer que la tabla de la base de datos se actualice 
+            if (textBox1.Text != "")
+            {
+                TandaModel rating = new TandaModel();
+                var validRating = rating.UserRating(textBox1.Text, true, idUsuario);
+                if (validRating == true)
+                {
+                    MessageBox.Show("Rating Participante asignado");
+                    this.Hide();
+                }
+            }
             this.Close();
         }
 

@@ -61,5 +61,40 @@ namespace DataAccess
 
         }
 
+        public bool UserRating(string Rating, bool Tipo, int IdUsuario)
+        {
+            string SumRatingP = "sumRatingP";
+            string SumRatingO = "sumVotosO";
+            string NumVotosP = "numVotosO";
+            string NumVotosO = "numVotosP";
+            int reg = Int32.Parse(Rating);
+
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    if (Tipo == true)
+                    {
+                        command.Parameters.AddWithValue("@rating", SumRatingP);
+                        command.Parameters.AddWithValue("@votos", NumVotosP);
+                    }
+                    else 
+                    {
+                        command.Parameters.AddWithValue("@rating", SumRatingO);
+                        command.Parameters.AddWithValue("@votos", NumVotosO);
+                    }
+
+                    command.Parameters.AddWithValue("@Rate", reg);
+                    command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+                    command.CommandText = "Update Usuario set @rating = @rating + @Rate, @votos = @votos + 1 where IdUsuario = @IdUsuario";
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+            }
+        }
+
     }
 }

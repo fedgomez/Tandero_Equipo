@@ -13,5 +13,10 @@ namespace Domain
         {
             return tandaRegister.RegistrarTanda(IdOrganizador, FechaInicio, DiaPago, NoParticipantes, Monto, Codigo, NombreTanda);
         }
+
+        public bool UserRating(String Rating, bool Tipo, int ID)
+        {
+            return tandaRegister.UserRating(Rating, Tipo, ID);
+        }
     }
 }

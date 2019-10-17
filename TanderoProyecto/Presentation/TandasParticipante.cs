@@ -55,7 +55,7 @@ namespace Proyecto
             Random rn = new Random();
             
             
-            using (var con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True"))
+            using (var con = new SqlConnection(@"Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True"))
             {
                 var sql = "Select IdTanda from Tanda where Codigo = @codigo";
                 var sql2 = "Select IdOrganizador from Tanda where Codigo = @codigo";
