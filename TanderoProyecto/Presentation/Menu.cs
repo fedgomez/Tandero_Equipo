@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
+using Help = Presentation.Help;
 
 
 namespace Proyecto
@@ -68,6 +69,17 @@ namespace Proyecto
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Help h = new Help();
+            h.Show();
         }
     }
 }

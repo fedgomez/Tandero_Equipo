@@ -27,3 +27,4 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
