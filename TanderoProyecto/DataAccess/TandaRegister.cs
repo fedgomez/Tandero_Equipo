@@ -63,32 +63,46 @@ namespace DataAccess
 
         public bool UserRating(string Rating, bool Tipo, int IdUsuario)
         {
-            string SumRatingP = "sumRatingP";
-            string SumRatingO = "sumVotosO";
-            string NumVotosP = "numVotosO";
-            string NumVotosO = "numVotosP";
             int reg = Int32.Parse(Rating);
-
             using (var connection = GetConnection())
             {
                 connection.Open();
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
+                    command.Parameters.AddWithValue("@Rate", reg);
+                    command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
                     if (Tipo == true)
                     {
-                        command.Parameters.AddWithValue("@rating", SumRatingP);
-                        command.Parameters.AddWithValue("@votos", NumVotosP);
+                        command.CommandText = "Update Usuario set sumRatingP = sumRatingP + @Rate, numVotosP = numVotosP + 1 where IdUsuario = @IdUsuario";
                     }
                     else 
                     {
-                        command.Parameters.AddWithValue("@rating", SumRatingO);
-                        command.Parameters.AddWithValue("@votos", NumVotosO);
+                        command.CommandText = "Update Usuario set sumVotosO = sumVotosO + @Rate, numVotosO = numVotosO + 1 where IdUsuario = @IdUsuario";
                     }
-
-                    command.Parameters.AddWithValue("@Rate", reg);
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+            }
+        }
+        public bool GetUserRating(int IdUsuario, bool Type)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
                     command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
-                    command.CommandText = "Update Usuario set @rating = @rating + @Rate, @votos = @votos + 1 where IdUsuario = @IdUsuario";
+                    if (Type == true)
+                    {
+                        command.CommandText = "Select u.numVotosP, u.sumRatingP from Usuario u where IdUsuario = @IdUsuario";
+                    }
+                    else
+                    {
+                        command.CommandText = "Select u.numVotosO, u.sumVotosO from Usuario u where IdUsuario = @IdUsuario";
+                    }
                     command.CommandType = CommandType.Text;
                     command.ExecuteNonQuery();
                     return true;

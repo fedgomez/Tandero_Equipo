@@ -15,11 +15,12 @@ namespace Proyecto
     public partial class CalificarOrganizador : Form
     {
         private string nombreOrganizador;
-        private int IdOrganizador = 1;
-        public CalificarOrganizador(string nombre)
+        private int IdOrganizador;
+        public CalificarOrganizador(string nombre, int idOrg)
         {
             InitializeComponent();
             nombreOrganizador = nombre;
+            IdOrganizador = idOrg;
         }
 
         private void CalificarOrganizador_Load(object sender, EventArgs e)

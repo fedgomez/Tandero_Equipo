@@ -18,5 +18,10 @@ namespace Domain
         {
             return tandaRegister.UserRating(Rating, Tipo, ID);
         }
+
+        public bool GetUserRating(int ID, bool Type)
+        {
+            return tandaRegister.GetUserRating(ID, Type);
+        }
     }
 }

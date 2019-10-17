@@ -26,21 +26,23 @@ namespace Proyecto
         private string nombreOrganizador;
         private string fecha;
         private string monto;
+        private int idOrg;
 
         private DataTable dtParticipantes;
-        public DetalleTandaParticipante(string id, string tanda, string nombreOrg, string monto, string fecha)
+        public DetalleTandaParticipante(string id, string tanda, string nombreOrg, string monto, string fecha, string idOrganizador)
         {
             InitializeComponent();
             idTanda = Int32.Parse(id);
             nombreTanda = tanda;
             nombreOrganizador = nombreOrg;
+            idOrg = Int32.Parse(idOrganizador);
             this.fecha = fecha;
             this.monto = monto;
         }
 
         private void btnRating_Click(object sender, EventArgs e)
         {
-            CalificarOrganizador co = new CalificarOrganizador(nombreOrganizador);
+            CalificarOrganizador co = new CalificarOrganizador(nombreOrganizador, idOrg);
             co.Show();
         }
 

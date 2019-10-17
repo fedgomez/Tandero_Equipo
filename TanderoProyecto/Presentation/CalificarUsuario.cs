@@ -36,7 +36,7 @@ namespace Proyecto
                 if (validRating == true)
                 {
                     MessageBox.Show("Rating Participante asignado");
-                    this.Hide();
+                    //this.Hide();
                 }
             }
             this.Close();
@@ -75,6 +75,20 @@ namespace Proyecto
 
             this.Text = nombreUsuario;
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if (labelRaring.Text != "")
+            {
+                TandaModel getrating = new TandaModel();
+                var validRating = getrating.GetUserRating(idUsuario, true);
+                if (validRating == true)
+                {
+                    MessageBox.Show("Rating Participante asignado");
+                    //this.Hide();
+                }
+            }
         }
     }
 }
