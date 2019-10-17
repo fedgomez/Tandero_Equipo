@@ -26,6 +26,7 @@ namespace Proyecto
         String idTanda;
         String nombreOrganizador;
         String idOrganizadorPasada;
+        String idOrganizadorActual;
         String tandaPasada;
         String idTandaPasada;
         String nombreOrganizadorPasada;
@@ -55,11 +56,12 @@ namespace Proyecto
             Random rn = new Random();
             
             
-            using (var con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True"))
+            using (var con = new SqlConnection(@"Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True"))
             {
                 var sql = "Select IdTanda from Tanda where Codigo = @codigo";
                 var sql2 = "Select IdOrganizador from Tanda where Codigo = @codigo";
                 var sql3 = "Select NoParticipantes from Tanda where Codigo = @codigo";
+                idOrganizadorActual = sql2;
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Codigo", tbUnirATanda.Text);
@@ -119,8 +121,9 @@ namespace Proyecto
                 nombreOrganizador = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Nombre"].ToString();
                 monto = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Monto"].ToString();
                 fecha = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["FechaInicio"].ToString();
+                idOrganizadorActual = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["IdOrganizador"].ToString();
 
-                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha);
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha, idOrganizadorActual);
                 dto.Show();
             }
         }
@@ -135,7 +138,7 @@ namespace Proyecto
                 montoPasado = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Monto"].ToString();
                 fechaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["FechaInicio"].ToString();
 
-                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada);
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada, idOrganizadorPasada);
                 dto.Show();
             }
         }
@@ -164,6 +167,11 @@ namespace Proyecto
 
             return dtTandas;
 
+
+        }
+
+        private void lbTandasActuales_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

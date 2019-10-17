@@ -88,3 +88,4 @@ C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentatio
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.exe
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.pdb
 C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
