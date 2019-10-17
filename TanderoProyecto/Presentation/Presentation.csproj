@@ -39,6 +39,7 @@
     <Reference Include="System.Data.SqlClient, Version=4.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.7.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,8 +47,8 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalificarOrganizador.cs">
@@ -65,7 +66,9 @@
     <Compile Include="CrearTanda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearTanda.Designer.cs" />
+    <Compile Include="CrearTanda.Designer.cs">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetalleTandaOrganizador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,7 +137,9 @@
     <EmbeddedResource Include="CalificarUsuario.resx">
       <DependentUpon>CalificarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrearTanda.resx" />
+    <EmbeddedResource Include="CrearTanda.resx">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetalleTandaOrganizador.resx">
       <DependentUpon>DetalleTandaOrganizador.cs</DependentUpon>
     </EmbeddedResource>

@@ -10,7 +10,9 @@ namespace DataAccess
 
         public ConnectionToSql()
         {
-            connectionString = "Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True";
+
+            connectionString = "Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True";
+
         }
 
         protected SqlConnection GetConnection()

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {}
+    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,16 +53,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
