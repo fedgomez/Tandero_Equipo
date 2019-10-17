@@ -12,6 +12,7 @@ namespace Domain
         public bool RegisterUser(string Name, string Email, string Password)
         {
             return userRegister.Register(Name, Email, Password);
+            
         }
     }
 }

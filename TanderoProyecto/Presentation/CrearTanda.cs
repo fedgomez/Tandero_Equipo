@@ -20,8 +20,6 @@ namespace Presentation
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
-
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {

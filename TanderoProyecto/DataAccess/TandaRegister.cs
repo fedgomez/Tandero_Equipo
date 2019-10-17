@@ -18,17 +18,19 @@ namespace DataAccess
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "Select * from Tanda where IdOrganizador = @IdOrganizador and NombreTanda = @NombreTanda";
-                    command.Parameters.AddWithValue("@IdOrganizador", IdOrganizador);
+                    command.CommandText = "Select * from Tanda where codigo = @codigo or NombreTanda = @NombreTanda";
+                    command.Parameters.AddWithValue("@codigo", Codigo);
                     command.Parameters.AddWithValue("@NombreTanda", NombreTanda);
+                    
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("Tanda ya existe");
+                        MessageBox.Show("Datos duplicados");
                         return false;
                     }
                 }
+
             }
 
             using (var connection = GetConnection())
