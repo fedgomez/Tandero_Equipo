@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Common.Cache;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +15,23 @@ namespace Proyecto
 {
     public partial class TandasParticipante : Form
     {
+        String monto;
+        String montoPasado;
+        String fecha;
+        String fechaPasada;
         String tanda;
+        String idTanda;
         String nombreOrganizador;
+        String idOrganizadorPasada;
+        String tandaPasada;
+        String idTandaPasada;
+        String nombreOrganizadorPasada;
         String apellidoOrganizador;
         String[] participantes = null;
+        String query;
+
+        DataTable dtTandasActuales;
+        DataTable dtTandasPasadas;
         public TandasParticipante()
         {
             InitializeComponent();
@@ -25,22 +41,73 @@ namespace Proyecto
         {
             //TO DO: Agregar al usuario actual a una tanda nueva con su código correspondiente
         }
-
-        private void lbTandas_DoubleClick(object sender, EventArgs e)
+        private void TandasParticipante_Load(object sender, EventArgs e)
         {
-            tanda = lbTandas.SelectedItem.ToString();
-            //TO DO: Get organizer name and last name from data base
-            nombreOrganizador = "Bernardo";
-            apellidoOrganizador = "Elizondo";
-            //TO DO: Get participants from database
-            participantes = new string[3];
-            participantes[0] = "Luis";
-            participantes[1] = "Felipe";
-            participantes[2] = "Álvaro";
+            query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 0";
+            dtTandasActuales = GetData(query);
+            lbTandasActuales.DataSource = GetData(query);
+            lbTandasActuales.DisplayMember = "NombreTanda";
 
-            DetalleTandaParticipante dtp = new DetalleTandaParticipante(tanda, nombreOrganizador, apellidoOrganizador, participantes);
-            dtp.Show();
-            Hide();
+            query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 1";
+            dtTandasPasadas = GetData(query);
+            lbTandasPasadas.DataSource = GetData(query);
+            lbTandasPasadas.DisplayMember = "NombreTanda";
+        }
+
+        private void lbTandasActuales_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbTandasActuales.SelectedItem != null)
+            {
+                tanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["NombreTanda"].ToString();
+                idTanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["IdTanda"].ToString();
+                nombreOrganizador = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Nombre"].ToString();
+                monto = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Monto"].ToString();
+                fecha = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["FechaInicio"].ToString();
+
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha);
+                dto.Show();
+            }
+        }
+
+        private void lbTandasPasadas_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbTandasPasadas.SelectedItem != null)
+            {
+                tandaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["NombreTanda"].ToString();
+                idTandaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["IdTanda"].ToString();
+                nombreOrganizadorPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Nombre"].ToString();
+                montoPasado = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Monto"].ToString();
+                fechaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["FechaInicio"].ToString();
+
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada);
+                dto.Show();
+            }
+        }
+
+
+
+        private DataTable GetData(string query)
+        {
+            DataTable dtTandas = new DataTable();
+
+            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.CommandType = System.Data.CommandType.Text;
+
+                    conn.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    dtTandas.Load(reader);
+                }
+            }
+
+            return dtTandas;
+
         }
     }
 }

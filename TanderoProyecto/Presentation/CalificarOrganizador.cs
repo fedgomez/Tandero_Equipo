@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace Proyecto
 {
+
     public partial class CalificarOrganizador : Form
     {
-        public CalificarOrganizador()
+        private string nombreOrganizador;
+        public CalificarOrganizador(string nombre)
         {
             InitializeComponent();
+            nombreOrganizador = nombre;
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void CalificarOrganizador_Load(object sender, EventArgs e)
         {
-
+            tbCalificar.Text = "Calificar a " + nombreOrganizador;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)

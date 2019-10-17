@@ -11,7 +11,8 @@
         "dependencies": {
           "Common": "1.0.0",
           "DataAccess": "1.0.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "System.Data.SqlClient": "4.7.0"
         },
         "runtime": {
           "Domain.dll": {}
@@ -143,6 +144,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.7.0"
+        },
         "runtime": {
           "Common.dll": {}
         }
@@ -150,10 +154,64 @@
       "DataAccess/1.0.0": {
         "dependencies": {
           "Common": "1.0.0",
-          "System.Data.SqlClient": "4.7.0"
+          "System.Data.SqlClient": "4.7.0",
+          "System.Windows.Forms": "4.0.0.0",
+          "System.Security": "4.0.0.0",
+          "System.Configuration": "4.0.0.0",
+          "Accessibility": "4.0.0.0",
+          "System.Deployment": "4.0.0.0",
+          "System.Runtime.Serialization.Formatters.Soap": "4.0.0.0"
         },
         "runtime": {
           "DataAccess.dll": {}
+        }
+      },
+      "System.Windows.Forms.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Security.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Security.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Configuration.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Configuration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "Accessibility.Reference/4.0.0.0": {
+        "runtime": {
+          "Accessibility.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Deployment.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Deployment.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      },
+      "System.Runtime.Serialization.Formatters.Soap.Reference/4.0.0.0": {
+        "runtime": {
+          "System.Runtime.Serialization.Formatters.Soap.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
         }
       }
     }
@@ -283,6 +341,36 @@
     },
     "DataAccess/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Forms.Reference/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Reference/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.Reference/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Accessibility.Reference/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Deployment.Reference/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Formatters.Soap.Reference/4.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

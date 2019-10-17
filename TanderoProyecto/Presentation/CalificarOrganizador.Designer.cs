@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCalificar = new System.Windows.Forms.TextBox();
             this.btnCalificarOrg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbCalificar
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Calificar Organizador";
+            this.tbCalificar.Location = new System.Drawing.Point(91, 15);
+            this.tbCalificar.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCalificar.Name = "tbCalificar";
+            this.tbCalificar.Size = new System.Drawing.Size(145, 22);
+            this.tbCalificar.TabIndex = 0;
+            this.tbCalificar.Text = "Calificar Organizador";
             // 
             // btnCalificarOrg
             // 
@@ -58,11 +58,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 138);
             this.Controls.Add(this.btnCalificarOrg);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCalificar);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalificarOrganizador";
             this.Text = "Calificar Organizador";
-            this.Load += new System.EventHandler(this.Form4_Load);
+            this.Load += new System.EventHandler(this.CalificarOrganizador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCalificar;
         private System.Windows.Forms.Button btnCalificarOrg;
     }
 }
