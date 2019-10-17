@@ -45,7 +45,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 15);
+            this.textBox1.Location = new System.Drawing.Point(81, 32);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
@@ -62,6 +62,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalificarUsuario";
             this.Text = "Calificar Usuario";
+            this.Load += new System.EventHandler(this.CalificarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

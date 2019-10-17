@@ -31,7 +31,8 @@ namespace Proyecto
             }
             else
             {
-                label2.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+                float res = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
+                label2.Text = res.ToString();
             }
         }
 
