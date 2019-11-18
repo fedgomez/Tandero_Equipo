@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
+using Help = Presentation.Help;
 
 
 namespace Proyecto
@@ -24,7 +25,16 @@ namespace Proyecto
         private void LoadUserData()
         {
             nombreLabel.Text = UserLoginCache.Nombre;
-            label2.Text = (UserLoginCache.sumRatingP / UserLoginCache.numVotosP).ToString();
+            if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
+            {
+                string i = "0";
+                label2.Text = i;
+            }
+            else
+            {
+                float res = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
+                label2.Text = res.ToString();
+            }
         }
 
         private void nombreLabel_Click(object sender, EventArgs e)
@@ -34,15 +44,16 @@ namespace Proyecto
 
         private void button3_Click(object sender, EventArgs e)
         {
-            LoginTandero l = new LoginTandero();
-            l.Show();
+            this.Close();
+            //LoginTandero l = new LoginTandero();
+            //l.Show();
             //TO DO: Cerrar la sesión activa con base de datos
         }
 
         private void btnTandas_Click(object sender, EventArgs e)
         {
-            //Tandas t = new Tandas();
-            //t.Show();
+            Tandas t = new Tandas();
+            t.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -59,6 +70,17 @@ namespace Proyecto
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Help h = new Help();
+            h.Show();
         }
     }
 }

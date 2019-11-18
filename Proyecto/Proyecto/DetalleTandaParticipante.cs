@@ -12,9 +12,17 @@ namespace Proyecto
 {
     public partial class DetalleTandaParticipante : Form
     {
-        public DetalleTandaParticipante()
+        public DetalleTandaParticipante(string tanda, string nombreOrg, string apellidoOrg, string[] participantes)
         {
             InitializeComponent();
+            this.Text = tanda;
+            labelNombre.Text = nombreOrg;
+            labelApellido.Text = apellidoOrg;
+
+            for (int i = 0; i < participantes.Length; i++)
+            {
+                lbParticipantes.Items.Add(participantes[i].ToString());
+            }
         }
 
         private void btnRating_Click(object sender, EventArgs e)

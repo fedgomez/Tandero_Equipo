@@ -34,10 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.7.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,10 +47,46 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalificarOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalificarOrganizador.Designer.cs">
+      <DependentUpon>CalificarOrganizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalificarUsuario.Designer.cs">
+      <DependentUpon>CalificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearTanda.Designer.cs">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleTandaOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleTandaOrganizador.Designer.cs">
+      <DependentUpon>DetalleTandaOrganizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleTandaParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleTandaParticipante.Designer.cs">
+      <DependentUpon>DetalleTandaParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginTandero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +113,42 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tandas.Designer.cs">
+      <DependentUpon>Tandas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TandasOrganizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TandasOrganizador.Designer.cs">
+      <DependentUpon>TandasOrganizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TandasParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TandasParticipante.Designer.cs">
+      <DependentUpon>TandasParticipante.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalificarOrganizador.resx">
+      <DependentUpon>CalificarOrganizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalificarUsuario.resx">
+      <DependentUpon>CalificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearTanda.resx">
+      <DependentUpon>CrearTanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleTandaOrganizador.resx">
+      <DependentUpon>DetalleTandaOrganizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleTandaParticipante.resx">
+      <DependentUpon>DetalleTandaParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginTandero.resx">
       <DependentUpon>LoginTandero.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +170,15 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tandas.resx">
+      <DependentUpon>Tandas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TandasOrganizador.resx">
+      <DependentUpon>TandasOrganizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TandasParticipante.resx">
+      <DependentUpon>TandasParticipante.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,10 +198,15 @@
       <Project>{72fef006-9f28-4960-b3c2-20818eea78aa}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{CB717B94-24F9-4B45-9CF6-CC2F2407216F}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{1074ce22-60a1-4141-8ca7-56e9f2b33bee}</Project>
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

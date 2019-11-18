@@ -12,9 +12,17 @@ namespace Proyecto
 {
     public partial class DetalleTandaOrganizador : Form
     {
-        public DetalleTandaOrganizador()
+        public DetalleTandaOrganizador(string tanda, string nombreOrg, string apellidoOrg, string [] participantes)
         {
             InitializeComponent();
+            this.Text = tanda;
+            labelNombre.Text = nombreOrg;
+            labelApellido.Text = apellidoOrg;
+            
+            for(int i = 0; i < participantes.Length; i++)
+            {
+                lbParticipantes.Items.Add(participantes[i].ToString());
+            }            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -23,5 +31,6 @@ namespace Proyecto
             // Validar que todos ya hayan tenido su cobro de la tanda
 
         }
+
     }
 }
