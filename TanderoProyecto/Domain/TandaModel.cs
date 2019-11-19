@@ -11,17 +11,44 @@ namespace Domain
 
         public bool RegistrarTanda(int IdOrganizador, String FechaInicio, int DiaPago, int NoParticipantes, int Monto, String Codigo, String NombreTanda)
         {
-            return tandaRegister.RegistrarTanda(IdOrganizador, FechaInicio, DiaPago, NoParticipantes, Monto, Codigo, NombreTanda);
+            try
+            {
+                return tandaRegister.RegistrarTanda(IdOrganizador, FechaInicio, DiaPago, NoParticipantes, Monto, Codigo, NombreTanda);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
 
         public bool UserRating(String Rating, bool Tipo, int ID)
         {
-            return tandaRegister.UserRating(Rating, Tipo, ID);
+            try
+            {
+                return tandaRegister.UserRating(Rating, Tipo, ID);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
 
         public bool GetUserRating(int ID, bool Type)
         {
-            return tandaRegister.GetUserRating(ID, Type);
+            try
+            {
+                return tandaRegister.GetUserRating(ID, Type);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
     }
 }

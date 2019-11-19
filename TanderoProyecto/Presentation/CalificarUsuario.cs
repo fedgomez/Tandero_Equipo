@@ -29,10 +29,10 @@ namespace Proyecto
         private void btnCalificarUsuario_Click(object sender, EventArgs e)
         {
             string AssignRating = "Rating Participante asignado";
-            if (textBox1.Text != "")
+            if (textBoxCalificarUsuario.Text != "")
             {
                 TandaModel rating = new TandaModel();
-                var validRating = rating.UserRating(textBox1.Text, true, idUsuario);
+                var validRating = rating.UserRating(textBoxCalificarUsuario.Text, true, idUsuario);
                 if (validRating == true)
                 {
                     MessageBox.Show(AssignRating);

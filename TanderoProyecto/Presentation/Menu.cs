@@ -28,12 +28,12 @@ namespace Proyecto
             if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
             {
                 string i = "0";
-                label2.Text = i;
+                labelRating.Text = i;
             }
             else
             {
                 float res = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
-                label2.Text = res.ToString();
+                labelRating.Text = res.ToString();
             }
         }
 

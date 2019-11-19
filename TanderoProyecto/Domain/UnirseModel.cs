@@ -13,7 +13,16 @@ namespace Domain
 
         public bool Unirse(int IdTanda, int IdUsuario, char Cobrado, int turno)
         {
-            return unirseTanda.Unirse(IdTanda, IdUsuario, '0', turno);
+            try
+            {
+                return unirseTanda.Unirse(IdTanda, IdUsuario, '0', turno);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
     }
 }

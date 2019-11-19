@@ -35,9 +35,9 @@ namespace Presentation
         {
             string error = "Error";
             string register = "Registro exitoso";
-            int date3 = dateTimePicker1.Value.Day;
-            int date2 = dateTimePicker1.Value.Month;
-            int date = dateTimePicker1.Value.Year;
+            int date3 = dateTimePicker.Value.Day;
+            int date2 = dateTimePicker.Value.Month;
+            int date = dateTimePicker.Value.Year;
             String fecha = (date + "-" + date2 + "-" + date3);
 
 

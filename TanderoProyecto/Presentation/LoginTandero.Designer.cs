@@ -34,8 +34,8 @@ namespace Proyecto
             this.btnLogin = new System.Windows.Forms.Button();
             this.email = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelMail = new System.Windows.Forms.Label();
+            this.labelPass = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,24 +63,24 @@ namespace Proyecto
             this.password.Size = new System.Drawing.Size(205, 22);
             this.password.TabIndex = 2;
             // 
-            // label1
+            // labelMail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Correo del Usuario";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelMail.AutoSize = true;
+            this.labelMail.Location = new System.Drawing.Point(45, 39);
+            this.labelMail.Name = "labelMail";
+            this.labelMail.Size = new System.Drawing.Size(127, 17);
+            this.labelMail.TabIndex = 3;
+            this.labelMail.Text = "Correo del Usuario";
+            this.labelMail.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelPass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Contraseña";
+            this.labelPass.AutoSize = true;
+            this.labelPass.Location = new System.Drawing.Point(45, 132);
+            this.labelPass.Name = "labelPass";
+            this.labelPass.Size = new System.Drawing.Size(81, 17);
+            this.labelPass.TabIndex = 4;
+            this.labelPass.Text = "Contraseña";
             // 
             // btnRegister
             // 
@@ -98,8 +98,8 @@ namespace Proyecto
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 334);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPass);
+            this.Controls.Add(this.labelMail);
             this.Controls.Add(this.password);
             this.Controls.Add(this.email);
             this.Controls.Add(this.btnLogin);
@@ -116,8 +116,8 @@ namespace Proyecto
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelMail;
+        private System.Windows.Forms.Label labelPass;
         private System.Windows.Forms.Button btnRegister;
 
     }

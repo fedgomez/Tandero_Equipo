@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxHelp = new System.Windows.Forms.TextBox();
             this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxHelp
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(2, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(716, 503);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxHelp.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxHelp.Location = new System.Drawing.Point(2, 3);
+            this.textBoxHelp.Multiline = true;
+            this.textBoxHelp.Name = "textBoxHelp";
+            this.textBoxHelp.ReadOnly = true;
+            this.textBoxHelp.Size = new System.Drawing.Size(716, 503);
+            this.textBoxHelp.TabIndex = 0;
+            this.textBoxHelp.Text = resources.GetString("textBoxHelp.Text");
+            this.textBoxHelp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // backButton
             // 
@@ -63,7 +63,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(724, 551);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxHelp);
             this.Name = "Help";
             this.Text = "Help";
             this.Load += new System.EventHandler(this.Help_Load);
@@ -74,7 +74,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxHelp;
         private System.Windows.Forms.Button backButton;
     }
 }

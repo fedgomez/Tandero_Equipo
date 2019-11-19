@@ -17,7 +17,16 @@ namespace DataAccess
 
         protected SqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            try
+            {
+                return new SqlConnection(connectionString);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
     }
 }

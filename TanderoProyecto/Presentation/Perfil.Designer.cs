@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelRatingOrg = new System.Windows.Forms.Label();
+            this.labelRatingUser = new System.Windows.Forms.Label();
             this.labelRatingO = new System.Windows.Forms.Label();
             this.labelRatingP = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelN = new System.Windows.Forms.Label();
+            this.labelMail = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelRatingOrg
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 203);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rating Organizador";
+            this.labelRatingOrg.AutoSize = true;
+            this.labelRatingOrg.Location = new System.Drawing.Point(12, 203);
+            this.labelRatingOrg.Name = "labelRatingOrg";
+            this.labelRatingOrg.Size = new System.Drawing.Size(132, 17);
+            this.labelRatingOrg.TabIndex = 0;
+            this.labelRatingOrg.Text = "Rating Organizador";
             // 
-            // label2
+            // labelRatingUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 270);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Rating Usuario";
+            this.labelRatingUser.AutoSize = true;
+            this.labelRatingUser.Location = new System.Drawing.Point(12, 270);
+            this.labelRatingUser.Name = "labelRatingUser";
+            this.labelRatingUser.Size = new System.Drawing.Size(102, 17);
+            this.labelRatingUser.TabIndex = 1;
+            this.labelRatingUser.Text = "Rating Usuario";
             // 
             // labelRatingO
             // 
@@ -75,23 +75,23 @@
             this.labelRatingP.TabIndex = 3;
             this.labelRatingP.Text = "label4";
             // 
-            // label5
+            // labelN
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Nombre";
+            this.labelN.AutoSize = true;
+            this.labelN.Location = new System.Drawing.Point(12, 78);
+            this.labelN.Name = "labelN";
+            this.labelN.Size = new System.Drawing.Size(58, 17);
+            this.labelN.TabIndex = 4;
+            this.labelN.Text = "Nombre";
             // 
-            // label7
+            // labelMail
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 141);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Correo";
+            this.labelMail.AutoSize = true;
+            this.labelMail.Location = new System.Drawing.Point(12, 141);
+            this.labelMail.Name = "labelMail";
+            this.labelMail.Size = new System.Drawing.Size(51, 17);
+            this.labelMail.TabIndex = 6;
+            this.labelMail.Text = "Correo";
             // 
             // labelName
             // 
@@ -129,12 +129,12 @@
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.labelName);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelMail);
+            this.Controls.Add(this.labelN);
             this.Controls.Add(this.labelRatingP);
             this.Controls.Add(this.labelRatingO);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelRatingUser);
+            this.Controls.Add(this.labelRatingOrg);
             this.Name = "Perfil";
             this.Text = "Perfil";
             this.ResumeLayout(false);
@@ -144,12 +144,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelRatingOrg;
+        private System.Windows.Forms.Label labelRatingUser;
         private System.Windows.Forms.Label labelRatingO;
         private System.Windows.Forms.Label labelRatingP;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelN;
+        private System.Windows.Forms.Label labelMail;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label labelEmail;

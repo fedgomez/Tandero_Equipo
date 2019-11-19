@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCalificarUsuario = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCalificarUsuario = new System.Windows.Forms.TextBox();
             this.labelR = new System.Windows.Forms.Label();
             this.labelRaring = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -45,14 +45,14 @@
             this.btnCalificarUsuario.UseVisualStyleBackColor = true;
             this.btnCalificarUsuario.Click += new System.EventHandler(this.btnCalificarUsuario_Click);
             // 
-            // textBox1
+            // textBoxCalificarUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 83);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Calificar usuario";
+            this.textBoxCalificarUsuario.Location = new System.Drawing.Point(13, 83);
+            this.textBoxCalificarUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCalificarUsuario.Name = "textBoxCalificarUsuario";
+            this.textBoxCalificarUsuario.Size = new System.Drawing.Size(132, 22);
+            this.textBoxCalificarUsuario.TabIndex = 3;
+            this.textBoxCalificarUsuario.Text = "Calificar usuario";
             // 
             // labelR
             // 
@@ -80,7 +80,7 @@
             this.ClientSize = new System.Drawing.Size(281, 144);
             this.Controls.Add(this.labelRaring);
             this.Controls.Add(this.labelR);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxCalificarUsuario);
             this.Controls.Add(this.btnCalificarUsuario);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalificarUsuario";
@@ -94,7 +94,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCalificarUsuario;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCalificarUsuario;
         private System.Windows.Forms.Label labelR;
         private System.Windows.Forms.Label labelRaring;
     }
