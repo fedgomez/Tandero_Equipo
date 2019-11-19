@@ -853,11 +853,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lmrod\\Documents\\Diseño Sof\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
+      "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -11,6 +11,7 @@ namespace DataAccess
     {
         public bool Unirse(int IdTanda, int IdUsuario, char Cobrado, int turno)
         {
+            string prevUser = "El usuario se había unido previamente a la tanda";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -24,7 +25,7 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("El usuario se había unido previamente a la tanda");
+                        MessageBox.Show(prevUser);
                         return false;
                     }
                 }

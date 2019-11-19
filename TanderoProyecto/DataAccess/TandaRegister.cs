@@ -12,6 +12,7 @@ namespace DataAccess
     {
         public bool RegistrarTanda(int IdOrganizador, String FechaInicio, int DiaPago, int NoParticipantes, int Monto, String Codigo, String NombreTanda)
         {
+            string dupData = "Datos duplicados";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -26,7 +27,7 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("Datos duplicados");
+                        MessageBox.Show(dupData);
                         return false;
                     }
                 }

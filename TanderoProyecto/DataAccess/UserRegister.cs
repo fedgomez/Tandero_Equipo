@@ -11,6 +11,7 @@ namespace DataAccess
     {
         public bool Register(string Name, string Email, string Password)
         {
+            string existingUser = "Usuario ya existente";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -23,7 +24,7 @@ namespace DataAccess
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
-                        MessageBox.Show("Usuario ya existente");
+                        MessageBox.Show(existingUser);
                         return false;
                     }
                 }

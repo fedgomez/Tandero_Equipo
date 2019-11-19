@@ -33,12 +33,13 @@ namespace Presentation
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            string error = "Error";
+            string register = "Registro exitoso";
             int date3 = dateTimePicker1.Value.Day;
             int date2 = dateTimePicker1.Value.Month;
             int date = dateTimePicker1.Value.Year;
             String fecha = (date + "-" + date2 + "-" + date3);
 
-            //if(dateTimePicker1.Value < dateTimePicker1.)
 
 
             var IdOrganiza = UserLoginCache.IdUsuario;
@@ -47,12 +48,12 @@ namespace Presentation
             var registro = tanda.RegistrarTanda(IdOrganiza, fecha, Convert.ToInt32(this.diapago.Text), Convert.ToInt32(this.participantes.Text), Convert.ToInt32(this.monto.Text), codigo.Text, nombre.Text);
             if (registro == true)
             {
-                MessageBox.Show("Registro exitoso");
+                MessageBox.Show(register);
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show(error);
                 codigo.Clear();
                 nombre.Clear();
                 participantes.Clear();

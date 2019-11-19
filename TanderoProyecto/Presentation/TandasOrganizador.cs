@@ -57,7 +57,6 @@ namespace Proyecto
                 dto.Show();
             }
 
-            //TO DO: Hacer un get de la base de datos de la tanda seleccionada para abrirla en la ventana de detalle
         }   
         
         private DataTable GetData(string query)

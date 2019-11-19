@@ -44,15 +44,8 @@ namespace Proyecto
 
         private void btnUnirTanda_Click(object sender, EventArgs e)
         {
-            //TO DO: Agregar al usuario actual a una tanda nueva con su código correspondiente
-            /*SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
-
-            SqlCommand cmd = con.CreateCommand;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * "
-                */
+            string register = "Registro exitoso";
             int idt, ido, turno, pt;
-            
             Random rn = new Random();
             
             
@@ -94,7 +87,7 @@ namespace Proyecto
            var registro = ur.Unirse(idt, idUser, '0', turno);
             if (registro == true)
             {
-                MessageBox.Show("Registro exitoso");
+                MessageBox.Show(register);
                 this.Hide();
             }
         }

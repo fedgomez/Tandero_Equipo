@@ -32,6 +32,7 @@ namespace Proyecto
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string error = "Error, Incorrect Email or Password";
             if (email.Text != "")
             {
                 if (password.Text != "")
@@ -47,7 +48,7 @@ namespace Proyecto
                     }
                     else
                     {
-                        MessageBox.Show("Error, Incorrect Email or Password");
+                        MessageBox.Show(error);
                         email.Clear();
                         password.Clear();
                         email.Focus();
@@ -55,12 +56,12 @@ namespace Proyecto
                 }
                 else
                 {
-                    MessageBox.Show("Error, Password Incorrect");
+                    MessageBox.Show(error);
                 }
             }
             else
             {
-                MessageBox.Show("Error, Email");
+                MessageBox.Show(error);
             }
 
         }

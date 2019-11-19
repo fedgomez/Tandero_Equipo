@@ -34,6 +34,9 @@ namespace Proyecto
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            string errorLog = "Error, Incorrect Email or Password";
+            string Register = "Registro exitoso";
+            string errorMsg = "Error";
             if (textName.Text != "")
             {
                 if (textEmail.Text != "")
@@ -44,12 +47,12 @@ namespace Proyecto
                         var validRegister = register.RegisterUser(textName.Text, textEmail.Text, textPass.Text);
                         if (validRegister == true)
                         {
-                            MessageBox.Show("Registro exitoso");
+                            MessageBox.Show(Register);
                             this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Error");
+                            MessageBox.Show(errorMsg);
                             textName.Clear();
                             textEmail.Clear();
                             textPass.Clear();
@@ -58,17 +61,17 @@ namespace Proyecto
                     }
                     else
                     {
-                        MessageBox.Show("Error, Inserte un Password valido");
+                        MessageBox.Show(errorLog);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Error, Inserte un Email Valido");
+                    MessageBox.Show(errorLog);
                 }
             }
             else
             {
-                MessageBox.Show("Error, Inserte un nombre valido");
+                MessageBox.Show(errorLog);
             }
             
         }
