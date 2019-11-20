@@ -45,7 +45,6 @@
             this.nombreLabel.Size = new System.Drawing.Size(58, 17);
             this.nombreLabel.TabIndex = 1;
             this.nombreLabel.Text = "Nombre";
-            //this.nombreLabel.Click += new System.EventHandler(this.nombreLabel_Click);
             // 
             // btnTandas
             // 
@@ -85,7 +84,6 @@
             this.Rating.Size = new System.Drawing.Size(49, 17);
             this.Rating.TabIndex = 6;
             this.Rating.Text = "Rating";
-            //this.Rating.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelRating
             // 
@@ -95,7 +93,6 @@
             this.labelRating.Size = new System.Drawing.Size(46, 17);
             this.labelRating.TabIndex = 7;
             this.labelRating.Text = "label2";
-            //this.labelRating.Click += new System.EventHandler(this.label2_Click);
             // 
             // helpButton
             // 
@@ -121,7 +118,6 @@
             this.Controls.Add(this.nombreLabel);
             this.Name = "Menu";
             this.Text = "Menu";
-            //this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

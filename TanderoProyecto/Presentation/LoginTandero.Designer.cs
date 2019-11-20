@@ -71,7 +71,6 @@ namespace Proyecto
             this.labelMail.Size = new System.Drawing.Size(127, 17);
             this.labelMail.TabIndex = 3;
             this.labelMail.Text = "Correo del Usuario";
-            //this.labelMail.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelPass
             // 
@@ -105,7 +104,6 @@ namespace Proyecto
             this.Controls.Add(this.btnLogin);
             this.Name = "LoginTandero";
             this.Text = "Login";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

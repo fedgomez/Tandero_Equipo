@@ -51,7 +51,6 @@
             this.diapago.Size = new System.Drawing.Size(205, 22);
             this.diapago.TabIndex = 0;
             this.diapago.Tag = "NombreTanda";
-            //this.diapago.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // participantes
             // 
@@ -61,7 +60,6 @@
             this.participantes.Size = new System.Drawing.Size(205, 22);
             this.participantes.TabIndex = 1;
             this.participantes.Tag = "NombreTanda";
-            //this.participantes.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // btnCrear
             // 
