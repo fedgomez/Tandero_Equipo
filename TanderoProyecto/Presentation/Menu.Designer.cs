@@ -45,7 +45,7 @@
             this.nombreLabel.Size = new System.Drawing.Size(58, 17);
             this.nombreLabel.TabIndex = 1;
             this.nombreLabel.Text = "Nombre";
-            this.nombreLabel.Click += new System.EventHandler(this.nombreLabel_Click);
+            //this.nombreLabel.Click += new System.EventHandler(this.nombreLabel_Click);
             // 
             // btnTandas
             // 
@@ -75,7 +75,7 @@
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.button3_Click);
+            this.btnCerrarSesion.Click += new System.EventHandler(this.logput_Click);
             // 
             // Rating
             // 
@@ -85,7 +85,7 @@
             this.Rating.Size = new System.Drawing.Size(49, 17);
             this.Rating.TabIndex = 6;
             this.Rating.Text = "Rating";
-            this.Rating.Click += new System.EventHandler(this.label1_Click);
+            //this.Rating.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelRating
             // 
@@ -95,7 +95,7 @@
             this.labelRating.Size = new System.Drawing.Size(46, 17);
             this.labelRating.TabIndex = 7;
             this.labelRating.Text = "label2";
-            this.labelRating.Click += new System.EventHandler(this.label2_Click);
+            //this.labelRating.Click += new System.EventHandler(this.label2_Click);
             // 
             // helpButton
             // 
@@ -105,7 +105,7 @@
             this.helpButton.TabIndex = 8;
             this.helpButton.Text = "?";
             this.helpButton.UseVisualStyleBackColor = true;
-            this.helpButton.Click += new System.EventHandler(this.button1_Click);
+            this.helpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // Menu
             // 
@@ -121,7 +121,7 @@
             this.Controls.Add(this.nombreLabel);
             this.Name = "Menu";
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Menu_Load);
+            //this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

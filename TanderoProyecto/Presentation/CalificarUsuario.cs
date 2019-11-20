@@ -74,7 +74,7 @@ namespace Proyecto
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelCalificarUsuario(object sender, EventArgs e)
         {
             string AssignRating = "Rating Participante asignado";
             if (labelRaring.Text != "")

@@ -37,12 +37,7 @@ namespace Proyecto
             }
         }
 
-        private void nombreLabel_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void logput_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -59,22 +54,8 @@ namespace Proyecto
             p.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void HelpButton_Click(object sender, EventArgs e)
         {
             Help h = new Help();
             h.Show();

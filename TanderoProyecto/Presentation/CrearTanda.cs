@@ -21,16 +21,6 @@ namespace Presentation
         }
 
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCrear_Click(object sender, EventArgs e)
         {
             string error = "Error";

@@ -44,7 +44,7 @@
             this.textBoxHelp.Size = new System.Drawing.Size(716, 503);
             this.textBoxHelp.TabIndex = 0;
             this.textBoxHelp.Text = resources.GetString("textBoxHelp.Text");
-            this.textBoxHelp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            //this.textBoxHelp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // backButton
             // 
@@ -66,7 +66,7 @@
             this.Controls.Add(this.textBoxHelp);
             this.Name = "Help";
             this.Text = "Help";
-            this.Load += new System.EventHandler(this.Help_Load);
+            //this.Load += new System.EventHandler(this.Help_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

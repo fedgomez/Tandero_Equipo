@@ -17,15 +17,6 @@ namespace Presentation
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Help_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void backButton_Click(object sender, EventArgs e)
         {

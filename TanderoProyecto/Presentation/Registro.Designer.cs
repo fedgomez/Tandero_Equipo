@@ -45,7 +45,7 @@
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(419, 22);
             this.textEmail.TabIndex = 0;
-            this.textEmail.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            //this.textEmail.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // textName
             // 
@@ -54,7 +54,7 @@
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(419, 22);
             this.textName.TabIndex = 3;
-            this.textName.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            //this.textName.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // btnCancel
             // 
@@ -85,7 +85,7 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(419, 22);
             this.textPass.TabIndex = 1;
-            this.textPass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
+            //this.textPass.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // labelName
             // 
@@ -96,7 +96,7 @@
             this.labelName.Size = new System.Drawing.Size(58, 17);
             this.labelName.TabIndex = 6;
             this.labelName.Text = "Nombre";
-            this.labelName.Click += new System.EventHandler(this.Label1_Click);
+            //this.labelName.Click += new System.EventHandler(this.Label1_Click);
             // 
             // labelEmail
             // 

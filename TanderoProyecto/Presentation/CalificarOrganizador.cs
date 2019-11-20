@@ -30,16 +30,6 @@ namespace Proyecto
             tbCalificar.Text = calif + nombreOrganizador;
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCalificarOrg_Click(object sender, EventArgs e)
         {
             if (tbCalificar.Text != "")
