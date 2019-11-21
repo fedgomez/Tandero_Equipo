@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LabelOrganizador = new System.Windows.Forms.Label();
+            this.labelParticipntes = new System.Windows.Forms.Label();
             this.lbParticipantes = new System.Windows.Forms.ListBox();
             this.labelNombre = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // LabelOrganizador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Organizador";
+            this.LabelOrganizador.AutoSize = true;
+            this.LabelOrganizador.Location = new System.Drawing.Point(12, 9);
+            this.LabelOrganizador.Name = "LabelOrganizador";
+            this.LabelOrganizador.Size = new System.Drawing.Size(87, 17);
+            this.LabelOrganizador.TabIndex = 0;
+            this.LabelOrganizador.Text = "Organizador";
             // 
-            // label2
+            // labelParticipntes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Participantes";
+            this.labelParticipntes.AutoSize = true;
+            this.labelParticipntes.Location = new System.Drawing.Point(12, 75);
+            this.labelParticipntes.Name = "labelParticipntes";
+            this.labelParticipntes.Size = new System.Drawing.Size(90, 17);
+            this.labelParticipntes.TabIndex = 1;
+            this.labelParticipntes.Text = "Participantes";
             // 
             // lbParticipantes
             // 
@@ -90,8 +90,8 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.lbParticipantes);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelParticipntes);
+            this.Controls.Add(this.LabelOrganizador);
             this.Name = "DetalleTandaOrganizador";
             this.Text = "DetalleTandaOrganizador";
             this.Load += new System.EventHandler(this.DetalleTandaOrganizador_Load);
@@ -102,8 +102,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LabelOrganizador;
+        private System.Windows.Forms.Label labelParticipntes;
         private System.Windows.Forms.ListBox lbParticipantes;
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Button btnEliminar;

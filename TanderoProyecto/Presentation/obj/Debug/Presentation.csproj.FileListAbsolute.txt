@@ -27,32 +27,95 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe.config
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.pdb
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.dll
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.dll
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.dll
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.dll
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.pdb
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.pdb
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.xml
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.pdb
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarOrganizador.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarUsuario.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaParticipante.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.LoginTandero.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Menu.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Perfil.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Properties.Resources.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Registro.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Tandas.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CopyComplete
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.exe
-C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Presentation.exe
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Common.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Domain.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\DataAccess.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Common.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\Domain.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarOrganizador.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarUsuario.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaParticipante.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.LoginTandero.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.Menu.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.Perfil.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.Registro.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.Tandas.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.exe
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarOrganizador.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarUsuario.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaParticipante.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.LoginTandero.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Menu.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Perfil.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Registro.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Tandas.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.exe
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
+C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.exe
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Presentation.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Common.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\Domain.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csprojAssemblyReference.cache
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarOrganizador.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.CalificarUsuario.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.CrearTanda.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaOrganizador.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.DetalleTandaParticipante.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Help.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.LoginTandero.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Menu.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Perfil.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Registro.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.Tandas.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasOrganizador.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Proyecto.TandasParticipante.resources
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.exe
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Presentation\obj\Debug\Presentation.pdb

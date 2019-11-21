@@ -1,3 +1,5 @@
+﻿using Common.Cache;
+using DataAccess;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto
+namespace Presentation
 {
     public partial class CrearTanda : Form
     {
@@ -18,36 +20,37 @@ namespace Proyecto
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True");
-
-
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-         /*   //TO DO: Crear una nueva tanda en la base de datos
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Insert into Tanda values(5,1, '"+ dateTimePicker1.Value.Date+ "'," + textBox1.Text +
-                              "," + textBox2.Text + "," + textBox3.Text + ",'" + textBox4.Text + "','" +textBox5.Text + "')";
-            
-            MessageBox.Show(dateTimePicker1.Value.ToShortDateString());
-            cmd.ExecuteNonQuery();
-            con.Close();
-    */
+            string error = "Error";
+            string register = "Registro exitoso";
+            int date3 = dateTimePicker.Value.Day;
+            int date2 = dateTimePicker.Value.Month;
+            int date = dateTimePicker.Value.Year;
+            String fecha = (date + "-" + date2 + "-" + date3);
 
-            /*
-             * Agregando comments para commit a Master
-             */
+
+
+            var IdOrganiza = UserLoginCache.IdUsuario;
+
+            TandaRegister tanda = new TandaRegister();
+            var registro = tanda.RegistrarTanda(IdOrganiza, fecha, Convert.ToInt32(this.diapago.Text), Convert.ToInt32(this.participantes.Text), Convert.ToInt32(this.monto.Text), codigo.Text, nombre.Text);
+            if (registro == true)
+            {
+                MessageBox.Show(register);
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(error);
+                codigo.Clear();
+                nombre.Clear();
+                participantes.Clear();
+                diapago.Clear();
+                monto.Clear();
+                nombre.Focus();
+            }
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -71,6 +74,11 @@ namespace Proyecto
         }
 
         private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

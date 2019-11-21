@@ -10,12 +10,23 @@ namespace DataAccess
 
         public ConnectionToSql()
         {
-            connectionString = "Server=DESKTOP-13R66OG\\SQLEXPRESS;Initial Catalog=Tandero;Integrated Security=True";
+
+            connectionString = "Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True";
+
         }
 
         protected SqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            try
+            {
+                return new SqlConnection(connectionString);
+            }
+            catch (InvalidCastException e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+            }
         }
     }
 }

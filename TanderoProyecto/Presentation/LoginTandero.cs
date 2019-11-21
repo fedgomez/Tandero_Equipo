@@ -20,18 +20,10 @@ namespace Proyecto
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string error = "Error, Incorrect Email or Password";
             if (email.Text != "")
             {
                 if (password.Text != "")
@@ -47,7 +39,7 @@ namespace Proyecto
                     }
                     else
                     {
-                        MessageBox.Show("Error, Incorrect Email or Password");
+                        MessageBox.Show(error);
                         email.Clear();
                         password.Clear();
                         email.Focus();
@@ -55,13 +47,12 @@ namespace Proyecto
                 }
                 else
                 {
-                    MessageBox.Show("Error, Enter Password");
+                    MessageBox.Show(error);
                 }
             }
             else
             {
-               // MessageBox.Show("Error, Enter Email");
-                System.Console.WriteLine("my string");
+                MessageBox.Show(error);
             }
 
         }

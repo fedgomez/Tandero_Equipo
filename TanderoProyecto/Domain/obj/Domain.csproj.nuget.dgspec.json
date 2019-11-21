@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {}
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bernardo Elizondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,20 +66,20 @@
         }
       }
     },
-    "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bernardo Elizondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +92,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
               }
             }
           }
@@ -132,20 +132,20 @@
         }
       }
     },
-    "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bernardo Elizondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,11 +158,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
               },
-              "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
               }
             }
           }

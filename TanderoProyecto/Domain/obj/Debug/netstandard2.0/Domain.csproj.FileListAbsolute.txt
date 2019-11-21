@@ -23,6 +23,60 @@ C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\D
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.xml
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.xml
 C:\Users\lmrod\Documents\Diseño Sof\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+<<<<<<< HEAD
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\Felipe\Desktop\Tandero_Equipo\Tandero_Equipo-master\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\Felipe\Documents\ITESO\13\SD\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+=======
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.deps.json
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.dll
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.pdb
@@ -48,3 +102,29 @@ C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\obj\Deb
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.dll
 C:\Users\Bernardo Elizondo\Desktop\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.pdb
+>>>>>>> master
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Windows.Forms.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\Accessibility.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Deployment.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.xml
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.csproj.CopyComplete
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\lmrod\Documents\TanderoProyecto\Tandero_Equipo\TanderoProyecto\Domain\obj\Debug\netstandard2.0\Domain.pdb

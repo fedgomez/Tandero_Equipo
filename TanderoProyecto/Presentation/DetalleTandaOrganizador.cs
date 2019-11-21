@@ -33,8 +33,6 @@ namespace Proyecto
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //TO DO: Felipe lo hace
-
 
         }
 
@@ -48,7 +46,6 @@ namespace Proyecto
 
             this.Text = nombreTanda;
 
-            //Method to make button visible when the Tanda meets the conditions to be deleted
             bool flag = true;
             string cobro;
             int cobroI;

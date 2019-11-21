@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
 
 namespace Proyecto
 {
@@ -27,26 +28,33 @@ namespace Proyecto
 
         private void btnCalificarUsuario_Click(object sender, EventArgs e)
         {
-            //TO DO: Hacer que la tabla de la base de datos se actualice 
+            string AssignRating = "Rating Participante asignado";
+            if (textBoxCalificarUsuario.Text != "")
+            {
+                TandaModel rating = new TandaModel();
+                var validRating = rating.UserRating(textBoxCalificarUsuario.Text, true, idUsuario);
+                if (validRating == true)
+                {
+                    MessageBox.Show(AssignRating);
+                }
+            }
             this.Close();
         }
 
         private DataTable GetData(string query)
         {
+            string dbconnection = "dbtest";
             dtUsuario = new DataTable();
 
-            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings[dbconnection].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.CommandType = System.Data.CommandType.Text;
-
                     conn.Open();
-
                     SqlDataReader reader = cmd.ExecuteReader();
-
                     dtUsuario.Load(reader);
                 }
             }
@@ -57,13 +65,27 @@ namespace Proyecto
 
         private void CalificarUsuario_Load(object sender, EventArgs e)
         {
+            string name = "Nombre";
             query = "SELECT Nombre FROM Usuario WHERE IdUsuario = " + idUsuario;
+            
             dtUsuario = GetData(query);
-
-            nombreUsuario = dtUsuario.Rows[0]["Nombre"].ToString();
-
+            nombreUsuario = dtUsuario.Rows[0][name].ToString();
             this.Text = nombreUsuario;
 
+        }
+
+        private void labelCalificarUsuario(object sender, EventArgs e)
+        {
+            string AssignRating = "Rating Participante asignado";
+            if (labelRaring.Text != "")
+            {
+                TandaModel getrating = new TandaModel();
+                var validRating = getrating.GetUserRating(idUsuario, true);
+                if (validRating == true)
+                {
+                    MessageBox.Show(AssignRating);
+                }
+            }
         }
     }
 }

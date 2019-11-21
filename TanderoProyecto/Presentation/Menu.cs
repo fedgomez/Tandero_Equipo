@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
+using Help = Presentation.Help;
 
 
 namespace Proyecto
@@ -27,26 +28,18 @@ namespace Proyecto
             if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
             {
                 string i = "0";
-                label2.Text = i;
+                labelRating.Text = i;
             }
             else
             {
                 float res = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
-                label2.Text = res.ToString();
+                labelRating.Text = res.ToString();
             }
         }
 
-        private void nombreLabel_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void logput_Click(object sender, EventArgs e)
         {
             this.Close();
-            //LoginTandero l = new LoginTandero();
-            //l.Show();
-            //TO DO: Cerrar la sesión activa con base de datos
         }
 
         private void btnTandas_Click(object sender, EventArgs e)
@@ -61,14 +54,11 @@ namespace Proyecto
             p.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void HelpButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            Help h = new Help();
+            h.Show();
         }
     }
 }

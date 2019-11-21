@@ -32,8 +32,9 @@
             this.btnTandas = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Rating = new System.Windows.Forms.Label();
+            this.labelRating = new System.Windows.Forms.Label();
+            this.helpButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nombreLabel
@@ -44,7 +45,6 @@
             this.nombreLabel.Size = new System.Drawing.Size(58, 17);
             this.nombreLabel.TabIndex = 1;
             this.nombreLabel.Text = "Nombre";
-            this.nombreLabel.Click += new System.EventHandler(this.nombreLabel_Click);
             // 
             // btnTandas
             // 
@@ -74,35 +74,44 @@
             this.btnCerrarSesion.TabIndex = 5;
             this.btnCerrarSesion.Text = "Cerrar Sesion";
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.button3_Click);
+            this.btnCerrarSesion.Click += new System.EventHandler(this.logput_Click);
             // 
-            // label1
+            // Rating
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(262, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Rating";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Rating.AutoSize = true;
+            this.Rating.Location = new System.Drawing.Point(262, 13);
+            this.Rating.Name = "Rating";
+            this.Rating.Size = new System.Drawing.Size(49, 17);
+            this.Rating.TabIndex = 6;
+            this.Rating.Text = "Rating";
             // 
-            // label2
+            // labelRating
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelRating.AutoSize = true;
+            this.labelRating.Location = new System.Drawing.Point(265, 42);
+            this.labelRating.Name = "labelRating";
+            this.labelRating.Size = new System.Drawing.Size(46, 17);
+            this.labelRating.TabIndex = 7;
+            this.labelRating.Text = "label2";
+            // 
+            // helpButton
+            // 
+            this.helpButton.Location = new System.Drawing.Point(383, 189);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(20, 23);
+            this.helpButton.TabIndex = 8;
+            this.helpButton.Text = "?";
+            this.helpButton.UseVisualStyleBackColor = true;
+            this.helpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 215);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.helpButton);
+            this.Controls.Add(this.labelRating);
+            this.Controls.Add(this.Rating);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnTandas);
@@ -119,7 +128,8 @@
         private System.Windows.Forms.Button btnTandas;
         private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Rating;
+        private System.Windows.Forms.Label labelRating;
+        private System.Windows.Forms.Button helpButton;
     }
 }

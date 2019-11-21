@@ -1,4 +1,7 @@
 ﻿using Common.Cache;
+
+using DataAccess;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +26,7 @@ namespace Proyecto
         String idTanda;
         String nombreOrganizador;
         String idOrganizadorPasada;
+        String idOrganizadorActual;
         String tandaPasada;
         String idTandaPasada;
         String nombreOrganizadorPasada;
@@ -32,6 +36,7 @@ namespace Proyecto
 
         DataTable dtTandasActuales;
         DataTable dtTandasPasadas;
+
         public TandasParticipante()
         {
             InitializeComponent();
@@ -39,7 +44,52 @@ namespace Proyecto
 
         private void btnUnirTanda_Click(object sender, EventArgs e)
         {
-            //TO DO: Agregar al usuario actual a una tanda nueva con su código correspondiente
+            string register = "Registro exitoso";
+            int idt, ido, turno, pt;
+            Random rn = new Random();
+            
+            
+            using (var con = new SqlConnection(@"Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True"))
+            {
+                var sql = "Select IdTanda from Tanda where Codigo = @codigo";
+                var sql2 = "Select IdOrganizador from Tanda where Codigo = @codigo";
+                var sql3 = "Select NoParticipantes from Tanda where Codigo = @codigo";
+                idOrganizadorActual = sql2;
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Codigo", tbUnirATanda.Text);
+                    con.Open();
+                    idt = (int)cmd.ExecuteScalar();
+                }
+                using (var cmd2 = new SqlCommand(sql2, con))
+                {
+                    cmd2.Parameters.AddWithValue("@codigo", tbUnirATanda.Text);
+                    ido = (int)cmd2.ExecuteScalar();
+                }
+
+                using (var cmd3 = new SqlCommand(sql3, con))
+                {
+                    cmd3.Parameters.AddWithValue("@codigo", tbUnirATanda.Text);
+                    pt = (int)cmd3.ExecuteScalar();
+                }
+                turno = rn.Next(1,pt);
+
+
+
+                con.Close();
+            }
+
+
+            var idUser = UserLoginCache.IdUsuario;
+
+            UnirseRegister ur = new UnirseRegister();
+
+           var registro = ur.Unirse(idt, idUser, '0', turno);
+            if (registro == true)
+            {
+                MessageBox.Show(register);
+                this.Hide();
+            }
         }
         private void TandasParticipante_Load(object sender, EventArgs e)
         {
@@ -56,6 +106,7 @@ namespace Proyecto
 
         private void lbTandasActuales_DoubleClick(object sender, EventArgs e)
         {
+
             if (lbTandasActuales.SelectedItem != null)
             {
                 tanda = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["NombreTanda"].ToString();
@@ -63,8 +114,9 @@ namespace Proyecto
                 nombreOrganizador = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Nombre"].ToString();
                 monto = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["Monto"].ToString();
                 fecha = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["FechaInicio"].ToString();
+                idOrganizadorActual = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["IdOrganizador"].ToString();
 
-                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha);
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTanda, tanda, nombreOrganizador, monto, fecha, idOrganizadorActual);
                 dto.Show();
             }
         }
@@ -79,7 +131,7 @@ namespace Proyecto
                 montoPasado = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Monto"].ToString();
                 fechaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["FechaInicio"].ToString();
 
-                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada);
+                DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada, idOrganizadorPasada);
                 dto.Show();
             }
         }
@@ -107,6 +159,12 @@ namespace Proyecto
             }
 
             return dtTandas;
+
+
+        }
+
+        private void lbTandasActuales_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

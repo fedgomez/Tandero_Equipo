@@ -847,23 +847,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\": {},
+    "C:\\Users\\lmrod\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Bernardo Elizondo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bernardo Elizondo\\Desktop\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
+      "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bernardo Elizondo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
