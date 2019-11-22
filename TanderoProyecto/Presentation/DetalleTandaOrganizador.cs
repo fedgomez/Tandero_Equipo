@@ -1,4 +1,5 @@
 ﻿using Common.Cache;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,10 +39,11 @@ namespace Proyecto
 
         private void DetalleTandaOrganizador_Load(object sender, EventArgs e)
         {
+            ConsultaModel consulta = new ConsultaModel();
             labelNombre.Text = UserLoginCache.Nombre.ToString();
             query = "SELECT u.Nombre FROM Usuario u INNER JOIN TandaDetalle td ON u.IdUsuario = td.idUsuario WHERE IdTanda = " + idTanda + " ORDER BY td.IdTanda OFFSET 1 ROWS";
-            lbParticipantes.DataSource = GetData(query);
-            dtParticipantes = GetData(query);
+            dtParticipantes = consulta.ejecutaConsulta(query);
+            lbParticipantes.DataSource = dtParticipantes;
             lbParticipantes.DisplayMember = "Nombre";
 
             this.Text = nombreTanda;
@@ -51,7 +53,7 @@ namespace Proyecto
             int cobroI;
 
             query = "SELECT * FROM TandaDetalle WHERE IdTanda = " + idTanda;
-            dtTandaDetalle = GetData(query);
+            dtTandaDetalle = consulta.ejecutaConsulta(query);
 
             foreach (DataRow row in dtTandaDetalle.Rows)
             {
@@ -65,34 +67,11 @@ namespace Proyecto
             if (!flag)
             {
                 btnEliminar.Visible = false;
-            } else
+            }
+            else
             {
                 btnEliminar.Visible = true;
             }
-
-        }
-
-        private DataTable GetData(string query)
-        {
-            dtParticipantes = new DataTable();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-
-                    conn.Open();
-
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    dtParticipantes.Load(reader);
-                }
-            }
-
-            return dtParticipantes;
 
         }
 

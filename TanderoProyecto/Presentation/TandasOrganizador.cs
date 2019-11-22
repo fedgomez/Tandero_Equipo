@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.Cache;
 using DataAccess;
+using Domain;
 
 namespace Proyecto
 {
@@ -34,14 +35,16 @@ namespace Proyecto
 
         private void TandasOrganizador_Load(object sender, EventArgs e)
         {
+            //Tandas actuales
+            ConsultaModel consulta = new ConsultaModel();
             query = "SELECT * FROM Tanda WHERE IdOrganizador = " + UserLoginCache.IdUsuario + "AND TandaTerminada = 0";
-            dtTandasActuales = GetData(query);
-            lbTandasOrganizador.DataSource = GetData(query);
+            dtTandasActuales = consulta.ejecutaConsulta(query);
+            lbTandasOrganizador.DataSource = dtTandasActuales;
             lbTandasOrganizador.DisplayMember = "NombreTanda";
-
+            //Tandas pasadas
             query = "SELECT * FROM Tanda WHERE IdOrganizador = " + UserLoginCache.IdUsuario + "AND TandaTerminada = 1";
-            dtTandasPasadas = GetData(query);
-            lbTandasPasadas.DataSource = GetData(query);
+            dtTandasPasadas = consulta.ejecutaConsulta(query);
+            lbTandasPasadas.DataSource = dtTandasPasadas;
             lbTandasPasadas.DisplayMember = "NombreTanda";
 
         }
@@ -58,30 +61,6 @@ namespace Proyecto
             }
 
         }   
-        
-        private DataTable GetData(string query)
-        {
-            DataTable dtTandas = new DataTable();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using(SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-
-                    conn.Open();
-
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    dtTandas.Load(reader);
-                }
-            }
-
-            return dtTandas;
-
-        }
 
         private void lbTandasPasadas_DoubleClick(object sender, EventArgs e)
         {

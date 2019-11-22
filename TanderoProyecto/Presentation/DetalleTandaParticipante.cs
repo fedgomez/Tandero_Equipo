@@ -1,4 +1,5 @@
 ﻿using Common.Cache;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,34 +54,11 @@ namespace Proyecto
             labelFechaPago.Text  = fecha;
             this.Text = nombreTanda;
 
+            ConsultaModel consulta = new ConsultaModel();
             query = "SELECT u.Nombre FROM Usuario u INNER JOIN TandaDetalle td ON u.IdUsuario = td.idUsuario WHERE IdTanda = " + idTanda;
-            lbParticipantes.DataSource = GetData(query);
-            dtParticipantes = GetData(query);
+            dtParticipantes = consulta.ejecutaConsulta(query);
+            lbParticipantes.DataSource = dtParticipantes;
             lbParticipantes.DisplayMember = "Nombre";
-
-        }
-
-        private DataTable GetData(string query)
-        {
-            DataTable dtTandas = new DataTable();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-
-                    conn.Open();
-
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    dtTandas.Load(reader);
-                }
-            }
-
-            return dtTandas;
 
         }
     }

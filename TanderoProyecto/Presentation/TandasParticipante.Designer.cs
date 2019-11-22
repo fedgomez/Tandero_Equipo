@@ -47,7 +47,6 @@
             this.lbTandasActuales.Name = "lbTandasActuales";
             this.lbTandasActuales.Size = new System.Drawing.Size(318, 148);
             this.lbTandasActuales.TabIndex = 0;
-            this.lbTandasActuales.SelectedIndexChanged += new System.EventHandler(this.lbTandasActuales_SelectedIndexChanged);
             this.lbTandasActuales.DoubleClick += new System.EventHandler(this.lbTandasActuales_DoubleClick);
             // 
             // btnUnirTanda
