@@ -1,19 +1,22 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
-using DataAccess;
 
 namespace Domain
 {
-    public class RegisterModel
+    public class ConsultaModel
     {
-        UserRegister userRegister = new UserRegister();
 
-        public bool RegisterUser(string Name, string Email, string Password)
+        public DataTable ejecutaConsulta(string query)
         {
+            ConsultaRegister consulta = new ConsultaRegister();
+            DataTable dt = new DataTable();
             try
             {
-                return userRegister.Register(Name, Email, Password);
+                dt = consulta.getInfo(query);
+                return dt;
             }
             catch (InvalidCastException e)
             {
@@ -21,7 +24,6 @@ namespace Domain
                     Console.WriteLine("IOException source: {0}", e.Source);
                 throw;
             }
-
         }
     }
 }

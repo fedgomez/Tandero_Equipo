@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
 
 namespace Proyecto
 {
@@ -74,8 +75,6 @@ namespace Proyecto
                 }
                 turno = rn.Next(1,pt);
 
-
-
                 con.Close();
             }
 
@@ -93,14 +92,16 @@ namespace Proyecto
         }
         private void TandasParticipante_Load(object sender, EventArgs e)
         {
+            //Tandas actuales
+            ConsultaModel consulta = new ConsultaModel();
             query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 0";
-            dtTandasActuales = GetData(query);
-            lbTandasActuales.DataSource = GetData(query);
+            dtTandasActuales = consulta.ejecutaConsulta(query);
+            lbTandasActuales.DataSource = dtTandasActuales;
             lbTandasActuales.DisplayMember = "NombreTanda";
-
+            //Tandas pasadas
             query = "SELECT * FROM TandaDetalle td INNER JOIN Tanda t ON t.IdTanda = td.IdTanda INNER JOIN Usuario u ON u.IdUsuario = t.idOrganizador WHERE td.idUsuario = " + UserLoginCache.IdUsuario + " AND TandaTerminada = 1";
-            dtTandasPasadas = GetData(query);
-            lbTandasPasadas.DataSource = GetData(query);
+            dtTandasPasadas = consulta.ejecutaConsulta(query);
+            lbTandasPasadas.DataSource = dtTandasPasadas;
             lbTandasPasadas.DisplayMember = "NombreTanda";
         }
 
@@ -130,42 +131,11 @@ namespace Proyecto
                 nombreOrganizadorPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Nombre"].ToString();
                 montoPasado = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["Monto"].ToString();
                 fechaPasada = dtTandasPasadas.Rows[lbTandasPasadas.SelectedIndex]["FechaInicio"].ToString();
+                idOrganizadorPasada = dtTandasActuales.Rows[lbTandasActuales.SelectedIndex]["IdOrganizador"].ToString();
 
                 DetalleTandaParticipante dto = new DetalleTandaParticipante(idTandaPasada, tandaPasada, nombreOrganizadorPasada, montoPasado, fechaPasada, idOrganizadorPasada);
                 dto.Show();
             }
-        }
-
-
-
-        private DataTable GetData(string query)
-        {
-            DataTable dtTandas = new DataTable();
-
-            string connectionString = ConfigurationManager.ConnectionStrings["dbtest"].ConnectionString;
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.CommandType = System.Data.CommandType.Text;
-
-                    conn.Open();
-
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    dtTandas.Load(reader);
-                }
-            }
-
-            return dtTandas;
-
-
-        }
-
-        private void lbTandasActuales_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
