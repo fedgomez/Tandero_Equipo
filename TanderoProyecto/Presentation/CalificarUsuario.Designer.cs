@@ -62,7 +62,7 @@
             this.labelR.Size = new System.Drawing.Size(49, 17);
             this.labelR.TabIndex = 4;
             this.labelR.Text = "Rating";
-            this.labelR.Click += new System.EventHandler(this.labelCalificarUsuario);
+           
             // 
             // labelRaring
             // 

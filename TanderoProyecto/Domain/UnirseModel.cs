@@ -1,4 +1,5 @@
-﻿using DataAccess;
+﻿/*
+ using DataAccess;
 using System;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using DataAccess;
 
 namespace Domain
 {
+
     public class UnirseModel
     {
         UnirseRegister unirseTanda = new UnirseRegister();
@@ -25,4 +27,6 @@ namespace Domain
             }
         }
     }
+
 }
+*/

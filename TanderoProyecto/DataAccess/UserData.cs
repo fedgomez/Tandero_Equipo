@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using Common.Cache;
-using System.Net.Sockets;
-using System.Windows.Forms;
 
 namespace DataAccess
 {
@@ -23,26 +18,21 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@email", Email);
                     command.Parameters.AddWithValue("@password", Password); 
                     command.CommandType = CommandType.Text;
-                    SqlDataReader reader = command.ExecuteReader();
-                    if (reader.HasRows)
+                    var reader = command.ExecuteReader();
+                    if (!reader.HasRows) return false;
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            UserLoginCache.IdUsuario = reader.GetInt32(0);
-                            UserLoginCache.Nombre = reader.GetString(1);
-                            UserLoginCache.Email = reader.GetString(2);
-                            UserLoginCache.numVotosO = reader.GetInt32(6);
-                            UserLoginCache.numVotosP = reader.GetInt32(4);
-                            UserLoginCache.sumRatingP = reader.GetInt32(5);
-                            UserLoginCache.sumRatingO = reader.GetInt32(7);
+                        UserLoginCache.IdUsuario = reader.GetInt32(0);
+                        UserLoginCache.Nombre = reader.GetString(1);
+                        UserLoginCache.Email = reader.GetString(2);
+                        UserLoginCache.NumVotosO = reader.GetInt32(6);
+                        UserLoginCache.NumVotosP = reader.GetInt32(4);
+                        UserLoginCache.SumRatingP = reader.GetInt32(5);
+                        UserLoginCache.SumRatingO = reader.GetInt32(7);
 
-                        }
-                        return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    return true;
+
                 }
             }
         }

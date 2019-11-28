@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using DataAccess;
 
 namespace Domain
 {
     public class RegisterModel
     {
-        UserRegister userRegister = new UserRegister();
+        private readonly UserRegister userRegister = new UserRegister();
 
         public bool RegisterUser(string Name, string Email, string Password)
         {

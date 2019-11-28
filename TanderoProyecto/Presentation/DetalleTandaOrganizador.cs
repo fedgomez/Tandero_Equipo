@@ -1,15 +1,7 @@
 ﻿using Common.Cache;
 using Domain;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto
@@ -19,14 +11,14 @@ namespace Proyecto
         private DataTable dtParticipantes;
         private DataTable dtTandaDetalle;
         private string query = "";
-        private string nombreTanda;
-        private int idTanda;
-        private string nombreUsuario;
+        private readonly string nombreTanda;
+        private readonly int idTanda;
+
         private string idUsuario;
         public DetalleTandaOrganizador(string id, string tanda)
         {
             InitializeComponent();
-            idTanda = Int32.Parse(id);
+            idTanda = int.Parse(id);
             nombreTanda = tanda;
         }
 
@@ -39,51 +31,41 @@ namespace Proyecto
 
         private void DetalleTandaOrganizador_Load(object sender, EventArgs e)
         {
-            ConsultaModel consulta = new ConsultaModel();
-            labelNombre.Text = UserLoginCache.Nombre.ToString();
+            
+            labelNombre.Text = UserLoginCache.Nombre;
             query = "SELECT u.Nombre FROM Usuario u INNER JOIN TandaDetalle td ON u.IdUsuario = td.idUsuario WHERE IdTanda = " + idTanda + " ORDER BY td.IdTanda OFFSET 1 ROWS";
-            dtParticipantes = consulta.ejecutaConsulta(query);
+            dtParticipantes = ConsultaModel.EjecutaConsulta(query);
             lbParticipantes.DataSource = dtParticipantes;
             lbParticipantes.DisplayMember = "Nombre";
 
-            this.Text = nombreTanda;
+            Text = nombreTanda;
 
-            bool flag = true;
-            string cobro;
-            int cobroI;
+            var flag = true;
+            
 
             query = "SELECT * FROM TandaDetalle WHERE IdTanda = " + idTanda;
-            dtTandaDetalle = consulta.ejecutaConsulta(query);
+            dtTandaDetalle = ConsultaModel.EjecutaConsulta(query);
 
             foreach (DataRow row in dtTandaDetalle.Rows)
             {
-                cobro = row["Cobrado"].ToString();
+                var cobro = row["Cobrado"].ToString();
                 if (cobro.Equals("False"))
                 {
                     flag = false;
                 }
             }
 
-            if (!flag)
-            {
-                btnEliminar.Visible = false;
-            }
-            else
-            {
-                btnEliminar.Visible = true;
-            }
+            btnEliminar.Visible = flag;
 
         }
 
         private void lbParticipantes_DoubleClick(object sender, EventArgs e)
         {
-            if (lbParticipantes.SelectedItem != null)
-            {
-                idUsuario = dtTandaDetalle.Rows[lbParticipantes.SelectedIndex + 1]["idUsuario"].ToString();
+            if (lbParticipantes.SelectedItem == null) return;
+            idUsuario = dtTandaDetalle.Rows[lbParticipantes.SelectedIndex + 1]["idUsuario"].ToString();
 
-                CalificarUsuario cu = new CalificarUsuario(idUsuario);
-                cu.Show();
-            }
+            var cu = new CalificarUsuario(idUsuario);
+            cu.Show();
         }
     }
 }

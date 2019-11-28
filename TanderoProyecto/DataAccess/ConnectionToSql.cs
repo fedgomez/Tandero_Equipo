@@ -8,7 +8,7 @@ namespace DataAccess
     {
         private readonly string connectionString;
 
-        public ConnectionToSql()
+        protected ConnectionToSql()
         {
 
             connectionString = "Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True";

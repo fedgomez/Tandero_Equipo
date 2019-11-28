@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -9,9 +6,9 @@ namespace DataAccess
 {
     public class UnirseRegister: ConnectionToSql
     {
-        public bool Unirse(int IdTanda, int IdUsuario, char Cobrado, int turno)
+        public bool Unirse(int IdTanda, int IdUsuario, int turno)
         {
-            string prevUser = "El usuario se había unido previamente a la tanda";
+            const string prevUser = "El usuario se había unido previamente a la tanda";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -22,7 +19,7 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@IdTanda", IdTanda);
                     command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
                     command.CommandType = CommandType.Text;
-                    SqlDataReader reader = command.ExecuteReader();
+                    var reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         MessageBox.Show(prevUser);
@@ -36,7 +33,7 @@ namespace DataAccess
                 connect.Open();
                 using (var com = new SqlCommand())
                 {
-                    char noiniciado = '0';
+                    const char noiniciado = '0';
                     com.Connection = connect;
                     com.CommandText = "Insert into TandaDetalle values(@IdTanda, @IdUsuario, @Cobrado, @Turno)";
                     com.Parameters.AddWithValue("@IdTanda", IdTanda);

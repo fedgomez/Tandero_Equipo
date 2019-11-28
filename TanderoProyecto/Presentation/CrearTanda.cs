@@ -1,14 +1,6 @@
 ﻿using Common.Cache;
 using DataAccess;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -23,23 +15,23 @@ namespace Presentation
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            string error = "Error";
-            string register = "Registro exitoso";
-            int date3 = dateTimePicker.Value.Day;
-            int date2 = dateTimePicker.Value.Month;
-            int date = dateTimePicker.Value.Year;
-            String fecha = (date + "-" + date2 + "-" + date3);
+            const string error = "Error";
+            const string register = "Registro exitoso";
+            var date3 = dateTimePicker.Value.Day;
+            var date2 = dateTimePicker.Value.Month;
+            var date = dateTimePicker.Value.Year;
+            var fecha = date + "-" + date2 + "-" + date3;
 
 
 
-            var IdOrganiza = UserLoginCache.IdUsuario;
+            var idOrganiza = UserLoginCache.IdUsuario;
 
-            TandaRegister tanda = new TandaRegister();
-            var registro = tanda.RegistrarTanda(IdOrganiza, fecha, Convert.ToInt32(this.diapago.Text), Convert.ToInt32(this.participantes.Text), Convert.ToInt32(this.monto.Text), codigo.Text, nombre.Text);
-            if (registro == true)
+            var tanda = new TandaRegister();
+            var registro = tanda.RegistrarTanda(idOrganiza, fecha, Convert.ToInt32(diapago.Text), Convert.ToInt32(participantes.Text), Convert.ToInt32(monto.Text), codigo.Text, nombre.Text);
+            if (registro)
             {
                 MessageBox.Show(register);
-                this.Hide();
+                Hide();
             }
             else
             {

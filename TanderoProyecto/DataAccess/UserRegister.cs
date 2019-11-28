@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -11,7 +8,7 @@ namespace DataAccess
     {
         public bool Register(string Name, string Email, string Password)
         {
-            string existingUser = "Usuario ya existente";
+            const string existingUser = "Usuario ya existente";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -21,7 +18,7 @@ namespace DataAccess
                     command.CommandText = "Select * from Usuario where Email = @email";
                     command.Parameters.AddWithValue("@email", Email);
                     command.CommandType = CommandType.Text;
-                    SqlDataReader reader = command.ExecuteReader();
+                    var reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         MessageBox.Show(existingUser);

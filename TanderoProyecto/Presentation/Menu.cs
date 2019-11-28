@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
 using Common.Cache;
 using Help = Presentation.Help;
@@ -25,39 +19,39 @@ namespace Proyecto
         private void LoadUserData()
         {
             nombreLabel.Text = UserLoginCache.Nombre;
-            if (UserLoginCache.sumRatingP == 0 && UserLoginCache.numVotosP == 0)
+            if (UserLoginCache.SumRatingP == 0 && UserLoginCache.NumVotosP == 0)
             {
-                string i = "0";
+                const string i = "0";
                 labelRating.Text = i;
             }
             else
             {
-                float res = (float)UserLoginCache.sumRatingP / (float)UserLoginCache.numVotosP;
-                labelRating.Text = res.ToString();
+                var res = UserLoginCache.SumRatingP / (float)UserLoginCache.NumVotosP;
+                labelRating.Text = res.ToString(CultureInfo.CurrentCulture);
             }
         }
 
         private void logput_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void btnTandas_Click(object sender, EventArgs e)
         {
-            Tandas t = new Tandas();
+            var t = new Tandas();
             t.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            Perfil p = new Perfil();
+            var p = new Perfil();
             p.Show();
         }
 
 
         private void HelpButton_Click(object sender, EventArgs e)
         {
-            Help h = new Help();
+            var h = new Help();
             h.Show();
         }
     }

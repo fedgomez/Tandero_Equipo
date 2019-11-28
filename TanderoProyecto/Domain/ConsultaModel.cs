@@ -1,21 +1,18 @@
 ﻿using DataAccess;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
 namespace Domain
 {
-    public class ConsultaModel
+    public static class ConsultaModel
     {
 
-        public DataTable ejecutaConsulta(string query)
+        public static DataTable EjecutaConsulta(string query)
         {
-            ConsultaRegister consulta = new ConsultaRegister();
-            DataTable dt = new DataTable();
+            var consulta = new ConsultaRegister();
             try
             {
-                dt = consulta.getInfo(query);
+                var dt = consulta.GetInfo(query);
                 return dt;
             }
             catch (InvalidCastException e)

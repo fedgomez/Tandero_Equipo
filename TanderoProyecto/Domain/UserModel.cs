@@ -5,8 +5,8 @@ using DataAccess;
 namespace Domain
 {
     public class UserModel
-    { 
-        UserData userData = new UserData();
+    {
+        private readonly UserData userData = new UserData();
 
         public bool LoginUser(string Email, string Password)
         {

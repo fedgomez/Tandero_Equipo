@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
@@ -7,9 +6,9 @@ namespace DataAccess
 {
     public class TandaRegister : ConnectionToSql
     {
-        public bool RegistrarTanda(int IdOrganizador, String FechaInicio, int DiaPago, int NoParticipantes, int Monto, String Codigo, String NombreTanda)
+        public bool RegistrarTanda(int IdOrganizador, string FechaInicio, int DiaPago, int NoParticipantes, int Monto, string Codigo, string NombreTanda)
         {
-            string dupData = "Datos duplicados";
+            const string dupData = "Datos duplicados";
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -21,7 +20,7 @@ namespace DataAccess
                     command.Parameters.AddWithValue("@NombreTanda", NombreTanda);
                     
                     command.CommandType = CommandType.Text;
-                    SqlDataReader reader = command.ExecuteReader();
+                    var reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         MessageBox.Show(dupData);
@@ -61,7 +60,7 @@ namespace DataAccess
 
         public bool UserRating(string Rating, bool Tipo, int IdUsuario)
         {
-            int reg = Int32.Parse(Rating);
+            var reg = int.Parse(Rating);
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -70,43 +69,14 @@ namespace DataAccess
                     command.Connection = connection;
                     command.Parameters.AddWithValue("@Rate", reg);
                     command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
-                    if (Tipo == true)
-                    {
-                        command.CommandText = "Update Usuario set sumRatingP = sumRatingP + @Rate, numVotosP = numVotosP + 1 where IdUsuario = @IdUsuario";
-                    }
-                    else 
-                    {
-                        command.CommandText = "Update Usuario set sumVotosO = sumVotosO + @Rate, numVotosO = numVotosO + 1 where IdUsuario = @IdUsuario";
-                    }
+                    command.CommandText = Tipo ? "Update Usuario set sumRatingP = sumRatingP + @Rate, numVotosP = numVotosP + 1 where IdUsuario = @IdUsuario" : "Update Usuario set sumVotosO = sumVotosO + @Rate, numVotosO = numVotosO + 1 where IdUsuario = @IdUsuario";
                     command.CommandType = CommandType.Text;
                     command.ExecuteNonQuery();
                     return true;
                 }
             }
         }
-        public bool GetUserRating(int IdUsuario, bool Type)
-        {
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-                using (var command = new SqlCommand())
-                {
-                    command.Connection = connection;
-                    command.Parameters.AddWithValue("@IdUsuario", IdUsuario);
-                    if (Type == true)
-                    {
-                        command.CommandText = "Select u.numVotosP, u.sumRatingP from Usuario u where IdUsuario = @IdUsuario";
-                    }
-                    else
-                    {
-                        command.CommandText = "Select u.numVotosO, u.sumVotosO from Usuario u where IdUsuario = @IdUsuario";
-                    }
-                    command.CommandType = CommandType.Text;
-                    command.ExecuteNonQuery();
-                    return true;
-                }
-            }
-        }
+
 
     }
 }

@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 
@@ -15,46 +9,46 @@ namespace Proyecto
 {
     public partial class CalificarUsuario : Form
     {
-        private int idUsuario;
+        private readonly int idUsuario;
         private string nombreUsuario;
         private DataTable dtUsuario;
         private string query;
         public CalificarUsuario(string id)
         {
             InitializeComponent();
-            idUsuario = Int32.Parse(id);
+            idUsuario = int.Parse(id);
             
         }
 
         private void btnCalificarUsuario_Click(object sender, EventArgs e)
         {
-            string AssignRating = "Rating Participante asignado";
+            const string assignRating = "Rating Participante asignado";
             if (textBoxCalificarUsuario.Text != "")
             {
-                TandaModel rating = new TandaModel();
+                var rating = new TandaModel();
                 var validRating = rating.UserRating(textBoxCalificarUsuario.Text, true, idUsuario);
-                if (validRating == true)
+                if (validRating)
                 {
-                    MessageBox.Show(AssignRating);
+                    MessageBox.Show(assignRating);
                 }
             }
-            this.Close();
+            Close();
         }
 
         private DataTable GetData(string query)
         {
-            string dbconnection = "dbtest";
+            const string dbconnection = "dbtest";
             dtUsuario = new DataTable();
 
-            string connectionString = ConfigurationManager.ConnectionStrings[dbconnection].ConnectionString;
+            var connectionString = ConfigurationManager.ConnectionStrings[dbconnection].ConnectionString;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (var conn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (var cmd = new SqlCommand(query, conn))
                 {
-                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandType = CommandType.Text;
                     conn.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
+                    var reader = cmd.ExecuteReader();
                     dtUsuario.Load(reader);
                 }
             }
@@ -65,27 +59,14 @@ namespace Proyecto
 
         private void CalificarUsuario_Load(object sender, EventArgs e)
         {
-            string name = "Nombre";
+            const string name = "Nombre";
             query = "SELECT Nombre FROM Usuario WHERE IdUsuario = " + idUsuario;
             
             dtUsuario = GetData(query);
             nombreUsuario = dtUsuario.Rows[0][name].ToString();
-            this.Text = nombreUsuario;
+            Text = nombreUsuario;
 
         }
 
-        private void labelCalificarUsuario(object sender, EventArgs e)
-        {
-            string AssignRating = "Rating Participante asignado";
-            if (labelRaring.Text != "")
-            {
-                TandaModel getrating = new TandaModel();
-                var validRating = getrating.GetUserRating(idUsuario, true);
-                if (validRating == true)
-                {
-                    MessageBox.Show(AssignRating);
-                }
-            }
-        }
     }
 }
