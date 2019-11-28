@@ -3,9 +3,6 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
-/// <summary>
-/// Actualizar Base de datos para autoincrementar ID de las Tandas y del Usuario
-/// </summary>
 namespace DataAccess
 {
     public class TandaRegister : ConnectionToSql

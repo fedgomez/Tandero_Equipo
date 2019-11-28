@@ -1,16 +1,15 @@
-﻿//using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 
 namespace DataAccess
 {
-    public class ConsultaRegister : ConnectionToSql
+    public class EnteroRegister : ConnectionToSql
     {
-        public DataTable getInfo(string query)
+        public int getInfo(string query, string text)
         {
-            DataTable dt = new DataTable();
+            int res;
             using (var connection = GetConnection())
             {
                 using (var cmd = new SqlCommand(query, connection))
@@ -19,12 +18,12 @@ namespace DataAccess
 
                     connection.Open();
 
-                    SqlDataReader reader = cmd.ExecuteReader();
+                    cmd.Parameters.AddWithValue("@codigo", text);
 
-                    dt.Load(reader);
+                    res = (int)cmd.ExecuteScalar();
                 }
             }
-            return dt;
+            return res;
         }
     }
 }

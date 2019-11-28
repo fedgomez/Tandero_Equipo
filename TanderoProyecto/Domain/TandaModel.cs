@@ -9,7 +9,7 @@ namespace Domain
     {
         TandaRegister tandaRegister = new TandaRegister();
 
-        public bool RegistrarTanda(int IdOrganizador, String FechaInicio, int DiaPago, int NoParticipantes, int Monto, String Codigo, String NombreTanda)
+        public bool RegistrarTanda(int IdOrganizador, string FechaInicio, int DiaPago, int NoParticipantes, int Monto, string Codigo, string NombreTanda)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace Domain
             }
         }
 
-        public bool UserRating(String Rating, bool Tipo, int ID)
+        public bool UserRating(string Rating, bool Tipo, int ID)
         {
             try
             {

@@ -50,34 +50,17 @@ namespace Proyecto
             Random rn = new Random();
             
             
-            using (var con = new SqlConnection(@"Data Source=DESKTOP-0KG1EJO;Initial Catalog=Tandero;Integrated Security=True"))
-            {
+                EnteroModel em = new EnteroModel();
                 var sql = "Select IdTanda from Tanda where Codigo = @codigo";
+                idt = em.ejecutaConsulta(sql, tbUnirATanda.Text);
                 var sql2 = "Select IdOrganizador from Tanda where Codigo = @codigo";
+                ido = em.ejecutaConsulta(sql2, tbUnirATanda.Text);
                 var sql3 = "Select NoParticipantes from Tanda where Codigo = @codigo";
+                pt =em.ejecutaConsulta(sql3, tbUnirATanda.Text);
+
                 idOrganizadorActual = sql2;
-                using (var cmd = new SqlCommand(sql, con))
-                {
-                    cmd.Parameters.AddWithValue("@Codigo", tbUnirATanda.Text);
-                    con.Open();
-                    idt = (int)cmd.ExecuteScalar();
-                }
-                using (var cmd2 = new SqlCommand(sql2, con))
-                {
-                    cmd2.Parameters.AddWithValue("@codigo", tbUnirATanda.Text);
-                    ido = (int)cmd2.ExecuteScalar();
-                }
-
-                using (var cmd3 = new SqlCommand(sql3, con))
-                {
-                    cmd3.Parameters.AddWithValue("@codigo", tbUnirATanda.Text);
-                    pt = (int)cmd3.ExecuteScalar();
-                }
+                
                 turno = rn.Next(1,pt);
-
-                con.Close();
-            }
-
 
             var idUser = UserLoginCache.IdUsuario;
 

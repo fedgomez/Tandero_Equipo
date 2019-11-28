@@ -1,21 +1,21 @@
-﻿using DataAccess;
-using System;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using DataAccess;
 
+
 namespace Domain
 {
-    public class UnirseModel
+    public class EnteroModel
     {
-        UnirseRegister unirseTanda = new UnirseRegister();
-
-        public bool Unirse(int IdTanda, int IdUsuario, char Cobrado, int turno)
+        public int ejecutaConsulta(string query, string text)
         {
+            EnteroRegister consulta = new EnteroRegister();
+            int res;
             try
             {
-                return unirseTanda.Unirse(IdTanda, IdUsuario, Cobrado, turno);
+                res = consulta.getInfo(query, text);
+                return res;
             }
             catch (InvalidCastException e)
             {

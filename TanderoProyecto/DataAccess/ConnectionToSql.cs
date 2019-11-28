@@ -11,7 +11,7 @@ namespace DataAccess
         public ConnectionToSql()
         {
 
-            connectionString = "Data Source=DESKTOP-13R66OG\\SQLEXPRESS;Initial Catalog=Tandero;Integrated Security=True";
+            connectionString = "Data Source=CLEOPATRA;Initial Catalog=Tandero;Integrated Security=True";
 
         }
 

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelOrganizador = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelParticipantes = new System.Windows.Forms.Label();
             this.lbParticipantes = new System.Windows.Forms.ListBox();
             this.btnRating = new System.Windows.Forms.Button();
             this.labelRating = new System.Windows.Forms.Label();
@@ -40,14 +40,14 @@
             this.labelFechaPago = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelOrganizador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Organizador";
+            this.labelOrganizador.AutoSize = true;
+            this.labelOrganizador.Location = new System.Drawing.Point(13, 13);
+            this.labelOrganizador.Name = "labelOrganizador";
+            this.labelOrganizador.Size = new System.Drawing.Size(87, 17);
+            this.labelOrganizador.TabIndex = 0;
+            this.labelOrganizador.Text = "Organizador";
             // 
             // labelNombre
             // 
@@ -58,14 +58,14 @@
             this.labelNombre.TabIndex = 1;
             this.labelNombre.Text = "Nombre";
             // 
-            // label4
+            // labelParticipantes
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Participantes";
+            this.labelParticipantes.AutoSize = true;
+            this.labelParticipantes.Location = new System.Drawing.Point(13, 119);
+            this.labelParticipantes.Name = "labelParticipantes";
+            this.labelParticipantes.Size = new System.Drawing.Size(90, 17);
+            this.labelParticipantes.TabIndex = 3;
+            this.labelParticipantes.Text = "Participantes";
             // 
             // lbParticipantes
             // 
@@ -143,9 +143,9 @@
             this.Controls.Add(this.labelRating);
             this.Controls.Add(this.btnRating);
             this.Controls.Add(this.lbParticipantes);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelParticipantes);
             this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelOrganizador);
             this.Name = "DetalleTandaParticipante";
             this.Text = "DetalleTandaParticipante";
             this.Load += new System.EventHandler(this.DetalleTandaParticipante_Load);
@@ -156,9 +156,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelOrganizador;
         private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelParticipantes;
         private System.Windows.Forms.ListBox lbParticipantes;
         private System.Windows.Forms.Button btnRating;
         private System.Windows.Forms.Label labelRating;
