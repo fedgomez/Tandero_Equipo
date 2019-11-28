@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {}
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,27 +53,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +92,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
               }
             }
           }
@@ -113,27 +119,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {
+    "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\lmrod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lmrod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,11 +158,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\Common\\Common.csproj"
               },
-              "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Felipe\\Documents\\ITESO\\13\\SD\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\lmrod\\Documents\\TanderoProyecto\\Tandero_Equipo\\TanderoProyecto\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -176,10 +188,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
